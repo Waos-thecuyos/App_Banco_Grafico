@@ -30,21 +30,21 @@
         {
             formulario_clientes = new Panel();
             tb_monto = new CustomControls.RJControls.RJTextBox();
+            bt_cliente_agregar = new CustomControls.RJControls.RJButton();
+            bt_cliente_eliminar = new CustomControls.RJControls.RJButton();
             tb_telefono = new CustomControls.RJControls.RJTextBox();
+            bt_cliente_editar = new CustomControls.RJControls.RJButton();
             tb_email = new CustomControls.RJControls.RJTextBox();
             tb_nacimiento = new CustomControls.RJControls.RJTextBox();
             tb_nombres = new CustomControls.RJControls.RJTextBox();
             tb_dni = new CustomControls.RJControls.RJTextBox();
-            checkBox2 = new CheckBox();
-            checkBox1 = new CheckBox();
+            CheckBox_discapacidad = new CheckBox();
+            CheckBox_ninhos = new CheckBox();
             label3 = new Label();
             label8 = new Label();
             label2 = new Label();
             label7 = new Label();
             label6 = new Label();
-            rjButton1 = new CustomControls.RJControls.RJButton();
-            bt_cliente_eliminar = new CustomControls.RJControls.RJButton();
-            bt_cliente_agregar = new CustomControls.RJControls.RJButton();
             label1 = new Label();
             formulario_clientes.SuspendLayout();
             SuspendLayout();
@@ -56,13 +56,13 @@
             formulario_clientes.Controls.Add(bt_cliente_agregar);
             formulario_clientes.Controls.Add(bt_cliente_eliminar);
             formulario_clientes.Controls.Add(tb_telefono);
-            formulario_clientes.Controls.Add(rjButton1);
+            formulario_clientes.Controls.Add(bt_cliente_editar);
             formulario_clientes.Controls.Add(tb_email);
             formulario_clientes.Controls.Add(tb_nacimiento);
             formulario_clientes.Controls.Add(tb_nombres);
             formulario_clientes.Controls.Add(tb_dni);
-            formulario_clientes.Controls.Add(checkBox2);
-            formulario_clientes.Controls.Add(checkBox1);
+            formulario_clientes.Controls.Add(CheckBox_discapacidad);
+            formulario_clientes.Controls.Add(CheckBox_ninhos);
             formulario_clientes.Controls.Add(label3);
             formulario_clientes.Controls.Add(label8);
             formulario_clientes.Controls.Add(label2);
@@ -97,6 +97,46 @@
             tb_monto.Texts = "";
             tb_monto.UnderlinedStyle = false;
             // 
+            // bt_cliente_agregar
+            // 
+            bt_cliente_agregar.BackColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_agregar.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_agregar.BorderColor = Color.PaleVioletRed;
+            bt_cliente_agregar.BorderRadius = 10;
+            bt_cliente_agregar.BorderSize = 0;
+            bt_cliente_agregar.Cursor = Cursors.Hand;
+            bt_cliente_agregar.FlatAppearance.BorderSize = 0;
+            bt_cliente_agregar.FlatStyle = FlatStyle.Flat;
+            bt_cliente_agregar.Font = new Font("Century Gothic", 12F);
+            bt_cliente_agregar.ForeColor = Color.LightGray;
+            bt_cliente_agregar.Location = new Point(644, 6);
+            bt_cliente_agregar.Name = "bt_cliente_agregar";
+            bt_cliente_agregar.Size = new Size(150, 40);
+            bt_cliente_agregar.TabIndex = 1;
+            bt_cliente_agregar.Text = "Agregar";
+            bt_cliente_agregar.TextColor = Color.LightGray;
+            bt_cliente_agregar.UseVisualStyleBackColor = false;
+            // 
+            // bt_cliente_eliminar
+            // 
+            bt_cliente_eliminar.BackColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_eliminar.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_eliminar.BorderColor = Color.PaleVioletRed;
+            bt_cliente_eliminar.BorderRadius = 10;
+            bt_cliente_eliminar.BorderSize = 0;
+            bt_cliente_eliminar.Cursor = Cursors.Hand;
+            bt_cliente_eliminar.FlatAppearance.BorderSize = 0;
+            bt_cliente_eliminar.FlatStyle = FlatStyle.Flat;
+            bt_cliente_eliminar.Font = new Font("Century Gothic", 12F);
+            bt_cliente_eliminar.ForeColor = Color.LightGray;
+            bt_cliente_eliminar.Location = new Point(644, 50);
+            bt_cliente_eliminar.Name = "bt_cliente_eliminar";
+            bt_cliente_eliminar.Size = new Size(150, 40);
+            bt_cliente_eliminar.TabIndex = 2;
+            bt_cliente_eliminar.Text = "Eliminar";
+            bt_cliente_eliminar.TextColor = Color.LightGray;
+            bt_cliente_eliminar.UseVisualStyleBackColor = false;
+            // 
             // tb_telefono
             // 
             tb_telefono.BackColor = Color.FromArgb(75, 57, 94);
@@ -118,6 +158,26 @@
             tb_telefono.TabIndex = 27;
             tb_telefono.Texts = "";
             tb_telefono.UnderlinedStyle = false;
+            // 
+            // bt_cliente_editar
+            // 
+            bt_cliente_editar.BackColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_editar.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_editar.BorderColor = Color.PaleVioletRed;
+            bt_cliente_editar.BorderRadius = 10;
+            bt_cliente_editar.BorderSize = 0;
+            bt_cliente_editar.Cursor = Cursors.Hand;
+            bt_cliente_editar.FlatAppearance.BorderSize = 0;
+            bt_cliente_editar.FlatStyle = FlatStyle.Flat;
+            bt_cliente_editar.Font = new Font("Century Gothic", 12F);
+            bt_cliente_editar.ForeColor = Color.LightGray;
+            bt_cliente_editar.Location = new Point(644, 93);
+            bt_cliente_editar.Name = "bt_cliente_editar";
+            bt_cliente_editar.Size = new Size(150, 40);
+            bt_cliente_editar.TabIndex = 3;
+            bt_cliente_editar.Text = "Editar";
+            bt_cliente_editar.TextColor = Color.LightGray;
+            bt_cliente_editar.UseVisualStyleBackColor = false;
             // 
             // tb_email
             // 
@@ -207,29 +267,29 @@
             tb_dni.Texts = "";
             tb_dni.UnderlinedStyle = false;
             // 
-            // checkBox2
+            // CheckBox_discapacidad
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Font = new Font("Century Gothic", 12F);
-            checkBox2.ForeColor = Color.LightGray;
-            checkBox2.Location = new Point(408, 250);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(139, 25);
-            checkBox2.TabIndex = 22;
-            checkBox2.Text = "Discapacidad";
-            checkBox2.UseVisualStyleBackColor = true;
+            CheckBox_discapacidad.AutoSize = true;
+            CheckBox_discapacidad.Font = new Font("Century Gothic", 12F);
+            CheckBox_discapacidad.ForeColor = Color.LightGray;
+            CheckBox_discapacidad.Location = new Point(408, 249);
+            CheckBox_discapacidad.Name = "CheckBox_discapacidad";
+            CheckBox_discapacidad.Size = new Size(139, 25);
+            CheckBox_discapacidad.TabIndex = 22;
+            CheckBox_discapacidad.Text = "Discapacidad";
+            CheckBox_discapacidad.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // CheckBox_ninhos
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Century Gothic", 12F);
-            checkBox1.ForeColor = Color.LightGray;
-            checkBox1.Location = new Point(263, 250);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(70, 25);
-            checkBox1.TabIndex = 15;
-            checkBox1.Text = "Niños";
-            checkBox1.UseVisualStyleBackColor = true;
+            CheckBox_ninhos.AutoSize = true;
+            CheckBox_ninhos.Font = new Font("Century Gothic", 12F);
+            CheckBox_ninhos.ForeColor = Color.LightGray;
+            CheckBox_ninhos.Location = new Point(258, 249);
+            CheckBox_ninhos.Name = "CheckBox_ninhos";
+            CheckBox_ninhos.Size = new Size(70, 25);
+            CheckBox_ninhos.TabIndex = 15;
+            CheckBox_ninhos.Text = "Niños";
+            CheckBox_ninhos.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -291,63 +351,6 @@
             label6.TabIndex = 5;
             label6.Text = "Email:";
             // 
-            // rjButton1
-            // 
-            rjButton1.BackColor = Color.FromArgb(38, 39, 59);
-            rjButton1.BackgroundColor = Color.FromArgb(38, 39, 59);
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 10;
-            rjButton1.BorderSize = 0;
-            rjButton1.FlatAppearance.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.Font = new Font("Century Gothic", 12F);
-            rjButton1.ForeColor = Color.LightGray;
-            rjButton1.Location = new Point(644, 93);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(150, 40);
-            rjButton1.TabIndex = 3;
-            rjButton1.Text = "Editar";
-            rjButton1.TextColor = Color.LightGray;
-            rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // bt_cliente_eliminar
-            // 
-            bt_cliente_eliminar.BackColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_eliminar.BackgroundColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_eliminar.BorderColor = Color.PaleVioletRed;
-            bt_cliente_eliminar.BorderRadius = 10;
-            bt_cliente_eliminar.BorderSize = 0;
-            bt_cliente_eliminar.FlatAppearance.BorderSize = 0;
-            bt_cliente_eliminar.FlatStyle = FlatStyle.Flat;
-            bt_cliente_eliminar.Font = new Font("Century Gothic", 12F);
-            bt_cliente_eliminar.ForeColor = Color.LightGray;
-            bt_cliente_eliminar.Location = new Point(644, 50);
-            bt_cliente_eliminar.Name = "bt_cliente_eliminar";
-            bt_cliente_eliminar.Size = new Size(150, 40);
-            bt_cliente_eliminar.TabIndex = 2;
-            bt_cliente_eliminar.Text = "Eliminar";
-            bt_cliente_eliminar.TextColor = Color.LightGray;
-            bt_cliente_eliminar.UseVisualStyleBackColor = false;
-            // 
-            // bt_cliente_agregar
-            // 
-            bt_cliente_agregar.BackColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_agregar.BackgroundColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_agregar.BorderColor = Color.PaleVioletRed;
-            bt_cliente_agregar.BorderRadius = 10;
-            bt_cliente_agregar.BorderSize = 0;
-            bt_cliente_agregar.FlatAppearance.BorderSize = 0;
-            bt_cliente_agregar.FlatStyle = FlatStyle.Flat;
-            bt_cliente_agregar.Font = new Font("Century Gothic", 12F);
-            bt_cliente_agregar.ForeColor = Color.LightGray;
-            bt_cliente_agregar.Location = new Point(644, 6);
-            bt_cliente_agregar.Name = "bt_cliente_agregar";
-            bt_cliente_agregar.Size = new Size(150, 40);
-            bt_cliente_agregar.TabIndex = 1;
-            bt_cliente_agregar.Text = "Agregar";
-            bt_cliente_agregar.TextColor = Color.LightGray;
-            bt_cliente_agregar.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -378,7 +381,7 @@
         private Panel formulario_clientes;
         private CustomControls.RJControls.RJButton bt_cliente_agregar;
         private CustomControls.RJControls.RJButton bt_cliente_eliminar;
-        private CustomControls.RJControls.RJButton rjButton1;
+        private CustomControls.RJControls.RJButton bt_cliente_editar;
         private Label label2;
         private Label label1;
         private Label label8;
@@ -387,9 +390,9 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private CheckBox checkBox1;
+        private CheckBox CheckBox_ninhos;
         private CustomControls.RJControls.RJTextBox rjTextBox1;
-        private CheckBox checkBox2;
+        private CheckBox CheckBox_discapacidad;
         private CustomControls.RJControls.RJTextBox tb_dni;
         private CustomControls.RJControls.RJTextBox tb_monto;
         private CustomControls.RJControls.RJTextBox tb_telefono;

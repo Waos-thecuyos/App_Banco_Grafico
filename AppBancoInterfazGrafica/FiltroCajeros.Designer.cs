@@ -28,101 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            rjButton1 = new CustomControls.RJControls.RJButton();
-            bt_cliente_eliminar = new CustomControls.RJControls.RJButton();
-            bt_cliente_agregar = new CustomControls.RJControls.RJButton();
+            bt_cajero_editar = new CustomControls.RJControls.RJButton();
+            bt_cajero_eliminar = new CustomControls.RJControls.RJButton();
+            bt_cajero_agregar = new CustomControls.RJControls.RJButton();
             formulario_clientes = new Panel();
+            tb_telefono_cajeros = new CustomControls.RJControls.RJTextBox();
             label7 = new Label();
+            label1 = new Label();
+            label2 = new Label();
             label6 = new Label();
             label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            rjTextBox1 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox2 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox3 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox4 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox5 = new CustomControls.RJControls.RJTextBox();
+            tb_email_cajeros = new CustomControls.RJControls.RJTextBox();
+            tb_direccion_cajeros = new CustomControls.RJControls.RJTextBox();
+            tb_nombres_cajeros = new CustomControls.RJControls.RJTextBox();
+            tb_dni_cajeros = new CustomControls.RJControls.RJTextBox();
             formulario_clientes.SuspendLayout();
             SuspendLayout();
             // 
-            // rjButton1
+            // bt_cajero_editar
             // 
-            rjButton1.BackColor = Color.FromArgb(38, 39, 59);
-            rjButton1.BackgroundColor = Color.FromArgb(38, 39, 59);
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 10;
-            rjButton1.BorderSize = 0;
-            rjButton1.FlatAppearance.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.Font = new Font("Century Gothic", 12F);
-            rjButton1.ForeColor = Color.DarkGray;
-            rjButton1.Location = new Point(644, 98);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(150, 40);
-            rjButton1.TabIndex = 7;
-            rjButton1.Text = "Editar";
-            rjButton1.TextColor = Color.DarkGray;
-            rjButton1.UseVisualStyleBackColor = false;
+            bt_cajero_editar.BackColor = Color.FromArgb(38, 39, 59);
+            bt_cajero_editar.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_cajero_editar.BorderColor = Color.PaleVioletRed;
+            bt_cajero_editar.BorderRadius = 10;
+            bt_cajero_editar.BorderSize = 0;
+            bt_cajero_editar.Cursor = Cursors.Hand;
+            bt_cajero_editar.FlatAppearance.BorderSize = 0;
+            bt_cajero_editar.FlatStyle = FlatStyle.Flat;
+            bt_cajero_editar.Font = new Font("Century Gothic", 12F);
+            bt_cajero_editar.ForeColor = Color.DarkGray;
+            bt_cajero_editar.Location = new Point(644, 98);
+            bt_cajero_editar.Name = "bt_cajero_editar";
+            bt_cajero_editar.Size = new Size(150, 40);
+            bt_cajero_editar.TabIndex = 7;
+            bt_cajero_editar.Text = "Editar";
+            bt_cajero_editar.TextColor = Color.DarkGray;
+            bt_cajero_editar.UseVisualStyleBackColor = false;
             // 
-            // bt_cliente_eliminar
+            // bt_cajero_eliminar
             // 
-            bt_cliente_eliminar.BackColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_eliminar.BackgroundColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_eliminar.BorderColor = Color.PaleVioletRed;
-            bt_cliente_eliminar.BorderRadius = 10;
-            bt_cliente_eliminar.BorderSize = 0;
-            bt_cliente_eliminar.FlatAppearance.BorderSize = 0;
-            bt_cliente_eliminar.FlatStyle = FlatStyle.Flat;
-            bt_cliente_eliminar.Font = new Font("Century Gothic", 12F);
-            bt_cliente_eliminar.ForeColor = Color.DarkGray;
-            bt_cliente_eliminar.Location = new Point(644, 52);
-            bt_cliente_eliminar.Name = "bt_cliente_eliminar";
-            bt_cliente_eliminar.Size = new Size(150, 40);
-            bt_cliente_eliminar.TabIndex = 6;
-            bt_cliente_eliminar.Text = "Eliminar";
-            bt_cliente_eliminar.TextColor = Color.DarkGray;
-            bt_cliente_eliminar.UseVisualStyleBackColor = false;
+            bt_cajero_eliminar.BackColor = Color.FromArgb(38, 39, 59);
+            bt_cajero_eliminar.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_cajero_eliminar.BorderColor = Color.PaleVioletRed;
+            bt_cajero_eliminar.BorderRadius = 10;
+            bt_cajero_eliminar.BorderSize = 0;
+            bt_cajero_eliminar.Cursor = Cursors.Hand;
+            bt_cajero_eliminar.FlatAppearance.BorderSize = 0;
+            bt_cajero_eliminar.FlatStyle = FlatStyle.Flat;
+            bt_cajero_eliminar.Font = new Font("Century Gothic", 12F);
+            bt_cajero_eliminar.ForeColor = Color.DarkGray;
+            bt_cajero_eliminar.Location = new Point(644, 52);
+            bt_cajero_eliminar.Name = "bt_cajero_eliminar";
+            bt_cajero_eliminar.Size = new Size(150, 40);
+            bt_cajero_eliminar.TabIndex = 6;
+            bt_cajero_eliminar.Text = "Eliminar";
+            bt_cajero_eliminar.TextColor = Color.DarkGray;
+            bt_cajero_eliminar.UseVisualStyleBackColor = false;
             // 
-            // bt_cliente_agregar
+            // bt_cajero_agregar
             // 
-            bt_cliente_agregar.BackColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_agregar.BackgroundColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_agregar.BorderColor = Color.PaleVioletRed;
-            bt_cliente_agregar.BorderRadius = 10;
-            bt_cliente_agregar.BorderSize = 0;
-            bt_cliente_agregar.FlatAppearance.BorderSize = 0;
-            bt_cliente_agregar.FlatStyle = FlatStyle.Flat;
-            bt_cliente_agregar.Font = new Font("Century Gothic", 12F);
-            bt_cliente_agregar.ForeColor = Color.DarkGray;
-            bt_cliente_agregar.Location = new Point(644, 6);
-            bt_cliente_agregar.Name = "bt_cliente_agregar";
-            bt_cliente_agregar.Size = new Size(150, 40);
-            bt_cliente_agregar.TabIndex = 5;
-            bt_cliente_agregar.Text = "Agregar";
-            bt_cliente_agregar.TextColor = Color.DarkGray;
-            bt_cliente_agregar.UseVisualStyleBackColor = false;
+            bt_cajero_agregar.BackColor = Color.FromArgb(38, 39, 59);
+            bt_cajero_agregar.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_cajero_agregar.BorderColor = Color.PaleVioletRed;
+            bt_cajero_agregar.BorderRadius = 10;
+            bt_cajero_agregar.BorderSize = 0;
+            bt_cajero_agregar.Cursor = Cursors.Hand;
+            bt_cajero_agregar.FlatAppearance.BorderSize = 0;
+            bt_cajero_agregar.FlatStyle = FlatStyle.Flat;
+            bt_cajero_agregar.Font = new Font("Century Gothic", 12F);
+            bt_cajero_agregar.ForeColor = Color.DarkGray;
+            bt_cajero_agregar.Location = new Point(644, 6);
+            bt_cajero_agregar.Name = "bt_cajero_agregar";
+            bt_cajero_agregar.Size = new Size(150, 40);
+            bt_cajero_agregar.TabIndex = 5;
+            bt_cajero_agregar.Text = "Agregar";
+            bt_cajero_agregar.TextColor = Color.DarkGray;
+            bt_cajero_agregar.UseVisualStyleBackColor = false;
             // 
             // formulario_clientes
             // 
             formulario_clientes.BackColor = Color.FromArgb(75, 57, 94);
-            formulario_clientes.Controls.Add(rjTextBox5);
-            formulario_clientes.Controls.Add(rjButton1);
+            formulario_clientes.Controls.Add(tb_telefono_cajeros);
+            formulario_clientes.Controls.Add(bt_cajero_editar);
             formulario_clientes.Controls.Add(label7);
-            formulario_clientes.Controls.Add(bt_cliente_agregar);
-            formulario_clientes.Controls.Add(bt_cliente_eliminar);
+            formulario_clientes.Controls.Add(bt_cajero_agregar);
+            formulario_clientes.Controls.Add(bt_cajero_eliminar);
             formulario_clientes.Controls.Add(label1);
             formulario_clientes.Controls.Add(label2);
             formulario_clientes.Controls.Add(label6);
             formulario_clientes.Controls.Add(label3);
-            formulario_clientes.Controls.Add(rjTextBox4);
-            formulario_clientes.Controls.Add(rjTextBox3);
-            formulario_clientes.Controls.Add(rjTextBox2);
-            formulario_clientes.Controls.Add(rjTextBox1);
+            formulario_clientes.Controls.Add(tb_email_cajeros);
+            formulario_clientes.Controls.Add(tb_direccion_cajeros);
+            formulario_clientes.Controls.Add(tb_nombres_cajeros);
+            formulario_clientes.Controls.Add(tb_dni_cajeros);
             formulario_clientes.Dock = DockStyle.Top;
             formulario_clientes.Location = new Point(0, 0);
             formulario_clientes.Name = "formulario_clientes";
             formulario_clientes.Size = new Size(840, 215);
             formulario_clientes.TabIndex = 4;
+            // 
+            // tb_telefono_cajeros
+            // 
+            tb_telefono_cajeros.BackColor = Color.FromArgb(75, 57, 94);
+            tb_telefono_cajeros.BorderColor = Color.MediumSlateBlue;
+            tb_telefono_cajeros.BorderFocusColor = Color.HotPink;
+            tb_telefono_cajeros.BorderRadius = 10;
+            tb_telefono_cajeros.BorderSize = 2;
+            tb_telefono_cajeros.Font = new Font("Segoe UI", 9.5F);
+            tb_telefono_cajeros.ForeColor = Color.DarkGray;
+            tb_telefono_cajeros.Location = new Point(238, 158);
+            tb_telefono_cajeros.Multiline = false;
+            tb_telefono_cajeros.Name = "tb_telefono_cajeros";
+            tb_telefono_cajeros.Padding = new Padding(10, 7, 10, 7);
+            tb_telefono_cajeros.PasswordChar = false;
+            tb_telefono_cajeros.PlaceholderColor = Color.DarkGray;
+            tb_telefono_cajeros.PlaceholderText = "";
+            tb_telefono_cajeros.ReadOnly = false;
+            tb_telefono_cajeros.Size = new Size(309, 32);
+            tb_telefono_cajeros.TabIndex = 12;
+            tb_telefono_cajeros.Texts = "";
+            tb_telefono_cajeros.UnderlinedStyle = false;
             // 
             // label7
             // 
@@ -135,6 +160,30 @@
             label7.Size = new Size(80, 21);
             label7.TabIndex = 6;
             label7.Text = "Teléfono:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Century Gothic", 12F);
+            label1.ForeColor = Color.LightGray;
+            label1.Location = new Point(34, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(43, 21);
+            label1.TabIndex = 0;
+            label1.Text = "DNI:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Century Gothic", 12F);
+            label2.ForeColor = Color.LightGray;
+            label2.Location = new Point(34, 55);
+            label2.Name = "label2";
+            label2.Size = new Size(169, 21);
+            label2.TabIndex = 1;
+            label2.Text = "Nombres y Apellidos:";
             // 
             // label6
             // 
@@ -160,139 +209,93 @@
             label3.TabIndex = 2;
             label3.Text = "Dirección:";
             // 
-            // label2
+            // tb_email_cajeros
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Century Gothic", 12F);
-            label2.ForeColor = Color.LightGray;
-            label2.Location = new Point(34, 55);
-            label2.Name = "label2";
-            label2.Size = new Size(169, 21);
-            label2.TabIndex = 1;
-            label2.Text = "Nombres y Apellidos:";
+            tb_email_cajeros.BackColor = Color.FromArgb(75, 57, 94);
+            tb_email_cajeros.BorderColor = Color.MediumSlateBlue;
+            tb_email_cajeros.BorderFocusColor = Color.HotPink;
+            tb_email_cajeros.BorderRadius = 10;
+            tb_email_cajeros.BorderSize = 2;
+            tb_email_cajeros.Font = new Font("Segoe UI", 9.5F);
+            tb_email_cajeros.ForeColor = Color.DarkGray;
+            tb_email_cajeros.Location = new Point(238, 120);
+            tb_email_cajeros.Multiline = false;
+            tb_email_cajeros.Name = "tb_email_cajeros";
+            tb_email_cajeros.Padding = new Padding(10, 7, 10, 7);
+            tb_email_cajeros.PasswordChar = false;
+            tb_email_cajeros.PlaceholderColor = Color.DarkGray;
+            tb_email_cajeros.PlaceholderText = "";
+            tb_email_cajeros.ReadOnly = false;
+            tb_email_cajeros.Size = new Size(309, 32);
+            tb_email_cajeros.TabIndex = 11;
+            tb_email_cajeros.Texts = "";
+            tb_email_cajeros.UnderlinedStyle = false;
             // 
-            // label1
+            // tb_direccion_cajeros
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Century Gothic", 12F);
-            label1.ForeColor = Color.LightGray;
-            label1.Location = new Point(34, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(43, 21);
-            label1.TabIndex = 0;
-            label1.Text = "DNI:";
+            tb_direccion_cajeros.BackColor = Color.FromArgb(75, 57, 94);
+            tb_direccion_cajeros.BorderColor = Color.MediumSlateBlue;
+            tb_direccion_cajeros.BorderFocusColor = Color.HotPink;
+            tb_direccion_cajeros.BorderRadius = 10;
+            tb_direccion_cajeros.BorderSize = 2;
+            tb_direccion_cajeros.Font = new Font("Segoe UI", 9.5F);
+            tb_direccion_cajeros.ForeColor = Color.DarkGray;
+            tb_direccion_cajeros.Location = new Point(238, 82);
+            tb_direccion_cajeros.Multiline = false;
+            tb_direccion_cajeros.Name = "tb_direccion_cajeros";
+            tb_direccion_cajeros.Padding = new Padding(10, 7, 10, 7);
+            tb_direccion_cajeros.PasswordChar = false;
+            tb_direccion_cajeros.PlaceholderColor = Color.DarkGray;
+            tb_direccion_cajeros.PlaceholderText = "";
+            tb_direccion_cajeros.ReadOnly = false;
+            tb_direccion_cajeros.Size = new Size(309, 32);
+            tb_direccion_cajeros.TabIndex = 10;
+            tb_direccion_cajeros.Texts = "";
+            tb_direccion_cajeros.UnderlinedStyle = false;
             // 
-            // rjTextBox1
+            // tb_nombres_cajeros
             // 
-            rjTextBox1.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox1.BorderColor = Color.MediumSlateBlue;
-            rjTextBox1.BorderFocusColor = Color.HotPink;
-            rjTextBox1.BorderRadius = 10;
-            rjTextBox1.BorderSize = 2;
-            rjTextBox1.Font = new Font("Segoe UI", 9.5F);
-            rjTextBox1.ForeColor = Color.DarkGray;
-            rjTextBox1.Location = new Point(238, 6);
-            rjTextBox1.Multiline = false;
-            rjTextBox1.Name = "rjTextBox1";
-            rjTextBox1.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox1.PasswordChar = false;
-            rjTextBox1.PlaceholderColor = Color.DarkGray;
-            rjTextBox1.PlaceholderText = "";
-            rjTextBox1.ReadOnly = false;
-            rjTextBox1.Size = new Size(309, 32);
-            rjTextBox1.TabIndex = 8;
-            rjTextBox1.Texts = "";
-            rjTextBox1.UnderlinedStyle = false;
+            tb_nombres_cajeros.BackColor = Color.FromArgb(75, 57, 94);
+            tb_nombres_cajeros.BorderColor = Color.MediumSlateBlue;
+            tb_nombres_cajeros.BorderFocusColor = Color.HotPink;
+            tb_nombres_cajeros.BorderRadius = 10;
+            tb_nombres_cajeros.BorderSize = 2;
+            tb_nombres_cajeros.Font = new Font("Segoe UI", 9.5F);
+            tb_nombres_cajeros.ForeColor = Color.DarkGray;
+            tb_nombres_cajeros.Location = new Point(238, 44);
+            tb_nombres_cajeros.Multiline = false;
+            tb_nombres_cajeros.Name = "tb_nombres_cajeros";
+            tb_nombres_cajeros.Padding = new Padding(10, 7, 10, 7);
+            tb_nombres_cajeros.PasswordChar = false;
+            tb_nombres_cajeros.PlaceholderColor = Color.DarkGray;
+            tb_nombres_cajeros.PlaceholderText = "";
+            tb_nombres_cajeros.ReadOnly = false;
+            tb_nombres_cajeros.Size = new Size(309, 32);
+            tb_nombres_cajeros.TabIndex = 9;
+            tb_nombres_cajeros.Texts = "";
+            tb_nombres_cajeros.UnderlinedStyle = false;
             // 
-            // rjTextBox2
+            // tb_dni_cajeros
             // 
-            rjTextBox2.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox2.BorderColor = Color.MediumSlateBlue;
-            rjTextBox2.BorderFocusColor = Color.HotPink;
-            rjTextBox2.BorderRadius = 10;
-            rjTextBox2.BorderSize = 2;
-            rjTextBox2.Font = new Font("Segoe UI", 9.5F);
-            rjTextBox2.ForeColor = Color.DarkGray;
-            rjTextBox2.Location = new Point(238, 44);
-            rjTextBox2.Multiline = false;
-            rjTextBox2.Name = "rjTextBox2";
-            rjTextBox2.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox2.PasswordChar = false;
-            rjTextBox2.PlaceholderColor = Color.DarkGray;
-            rjTextBox2.PlaceholderText = "";
-            rjTextBox2.ReadOnly = false;
-            rjTextBox2.Size = new Size(309, 32);
-            rjTextBox2.TabIndex = 9;
-            rjTextBox2.Texts = "";
-            rjTextBox2.UnderlinedStyle = false;
-            // 
-            // rjTextBox3
-            // 
-            rjTextBox3.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox3.BorderColor = Color.MediumSlateBlue;
-            rjTextBox3.BorderFocusColor = Color.HotPink;
-            rjTextBox3.BorderRadius = 10;
-            rjTextBox3.BorderSize = 2;
-            rjTextBox3.Font = new Font("Segoe UI", 9.5F);
-            rjTextBox3.ForeColor = Color.DarkGray;
-            rjTextBox3.Location = new Point(238, 82);
-            rjTextBox3.Multiline = false;
-            rjTextBox3.Name = "rjTextBox3";
-            rjTextBox3.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox3.PasswordChar = false;
-            rjTextBox3.PlaceholderColor = Color.DarkGray;
-            rjTextBox3.PlaceholderText = "";
-            rjTextBox3.ReadOnly = false;
-            rjTextBox3.Size = new Size(309, 32);
-            rjTextBox3.TabIndex = 10;
-            rjTextBox3.Texts = "";
-            rjTextBox3.UnderlinedStyle = false;
-            // 
-            // rjTextBox4
-            // 
-            rjTextBox4.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox4.BorderColor = Color.MediumSlateBlue;
-            rjTextBox4.BorderFocusColor = Color.HotPink;
-            rjTextBox4.BorderRadius = 10;
-            rjTextBox4.BorderSize = 2;
-            rjTextBox4.Font = new Font("Segoe UI", 9.5F);
-            rjTextBox4.ForeColor = Color.DarkGray;
-            rjTextBox4.Location = new Point(238, 120);
-            rjTextBox4.Multiline = false;
-            rjTextBox4.Name = "rjTextBox4";
-            rjTextBox4.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox4.PasswordChar = false;
-            rjTextBox4.PlaceholderColor = Color.DarkGray;
-            rjTextBox4.PlaceholderText = "";
-            rjTextBox4.ReadOnly = false;
-            rjTextBox4.Size = new Size(309, 32);
-            rjTextBox4.TabIndex = 11;
-            rjTextBox4.Texts = "";
-            rjTextBox4.UnderlinedStyle = false;
-            // 
-            // rjTextBox5
-            // 
-            rjTextBox5.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox5.BorderColor = Color.MediumSlateBlue;
-            rjTextBox5.BorderFocusColor = Color.HotPink;
-            rjTextBox5.BorderRadius = 10;
-            rjTextBox5.BorderSize = 2;
-            rjTextBox5.Font = new Font("Segoe UI", 9.5F);
-            rjTextBox5.ForeColor = Color.DarkGray;
-            rjTextBox5.Location = new Point(238, 158);
-            rjTextBox5.Multiline = false;
-            rjTextBox5.Name = "rjTextBox5";
-            rjTextBox5.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox5.PasswordChar = false;
-            rjTextBox5.PlaceholderColor = Color.DarkGray;
-            rjTextBox5.PlaceholderText = "";
-            rjTextBox5.ReadOnly = false;
-            rjTextBox5.Size = new Size(309, 32);
-            rjTextBox5.TabIndex = 12;
-            rjTextBox5.Texts = "";
-            rjTextBox5.UnderlinedStyle = false;
+            tb_dni_cajeros.BackColor = Color.FromArgb(75, 57, 94);
+            tb_dni_cajeros.BorderColor = Color.MediumSlateBlue;
+            tb_dni_cajeros.BorderFocusColor = Color.HotPink;
+            tb_dni_cajeros.BorderRadius = 10;
+            tb_dni_cajeros.BorderSize = 2;
+            tb_dni_cajeros.Font = new Font("Segoe UI", 9.5F);
+            tb_dni_cajeros.ForeColor = Color.DarkGray;
+            tb_dni_cajeros.Location = new Point(238, 6);
+            tb_dni_cajeros.Multiline = false;
+            tb_dni_cajeros.Name = "tb_dni_cajeros";
+            tb_dni_cajeros.Padding = new Padding(10, 7, 10, 7);
+            tb_dni_cajeros.PasswordChar = false;
+            tb_dni_cajeros.PlaceholderColor = Color.DarkGray;
+            tb_dni_cajeros.PlaceholderText = "";
+            tb_dni_cajeros.ReadOnly = false;
+            tb_dni_cajeros.Size = new Size(309, 32);
+            tb_dni_cajeros.TabIndex = 8;
+            tb_dni_cajeros.Texts = "";
+            tb_dni_cajeros.UnderlinedStyle = false;
             // 
             // FiltroCajeros
             // 
@@ -308,19 +311,19 @@
 
         #endregion
 
-        private CustomControls.RJControls.RJButton rjButton1;
-        private CustomControls.RJControls.RJButton bt_cliente_eliminar;
-        private CustomControls.RJControls.RJButton bt_cliente_agregar;
+        private CustomControls.RJControls.RJButton bt_cajero_editar;
+        private CustomControls.RJControls.RJButton bt_cajero_eliminar;
+        private CustomControls.RJControls.RJButton bt_cajero_agregar;
         private Panel formulario_clientes;
         private Label label7;
         private Label label6;
         private Label label3;
         private Label label2;
         private Label label1;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
-        private CustomControls.RJControls.RJTextBox rjTextBox5;
-        private CustomControls.RJControls.RJTextBox rjTextBox4;
-        private CustomControls.RJControls.RJTextBox rjTextBox3;
-        private CustomControls.RJControls.RJTextBox rjTextBox2;
+        private CustomControls.RJControls.RJTextBox tb_dni_cajeros;
+        private CustomControls.RJControls.RJTextBox tb_telefono_cajeros;
+        private CustomControls.RJControls.RJTextBox tb_email_cajeros;
+        private CustomControls.RJControls.RJTextBox tb_direccion_cajeros;
+        private CustomControls.RJControls.RJTextBox tb_nombres_cajeros;
     }
 }

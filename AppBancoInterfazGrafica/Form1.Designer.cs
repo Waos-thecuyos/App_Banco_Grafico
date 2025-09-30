@@ -46,10 +46,9 @@
             // PanelContenedor
             // 
             PanelContenedor.Dock = DockStyle.Right;
-            PanelContenedor.Location = new Point(279, 0);
-            PanelContenedor.Margin = new Padding(3, 4, 3, 4);
+            PanelContenedor.Location = new Point(244, 0);
             PanelContenedor.Name = "PanelContenedor";
-            PanelContenedor.Size = new Size(960, 703);
+            PanelContenedor.Size = new Size(840, 527);
             PanelContenedor.TabIndex = 7;
             // 
             // panel2
@@ -57,17 +56,17 @@
             panel2.BackColor = Color.FromArgb(235, 158, 255);
             panel2.Controls.Add(pictureBox1);
             panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(279, 219);
+            panel2.Size = new Size(244, 164);
             panel2.TabIndex = 8;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Logo;
-            pictureBox1.Location = new Point(43, 3);
+            pictureBox1.Location = new Point(47, 2);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(200, 200);
+            pictureBox1.Size = new Size(150, 150);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -75,6 +74,7 @@
             // bt_clientes
             // 
             bt_clientes.BackColor = Color.FromArgb(38, 39, 59);
+            bt_clientes.Cursor = Cursors.Hand;
             bt_clientes.FlatAppearance.BorderSize = 0;
             bt_clientes.FlatStyle = FlatStyle.Flat;
             bt_clientes.Font = new Font("Century Gothic", 14.25F);
@@ -84,10 +84,9 @@
             bt_clientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             bt_clientes.IconSize = 30;
             bt_clientes.ImageAlign = ContentAlignment.MiddleLeft;
-            bt_clientes.Location = new Point(0, 4);
-            bt_clientes.Margin = new Padding(3, 4, 3, 4);
+            bt_clientes.Location = new Point(0, 3);
             bt_clientes.Name = "bt_clientes";
-            bt_clientes.Size = new Size(275, 67);
+            bt_clientes.Size = new Size(241, 50);
             bt_clientes.TabIndex = 0;
             bt_clientes.Text = "Clientes";
             bt_clientes.TextAlign = ContentAlignment.MiddleLeft;
@@ -98,6 +97,7 @@
             // bt_cajeros
             // 
             bt_cajeros.BackColor = Color.FromArgb(38, 39, 59);
+            bt_cajeros.Cursor = Cursors.Hand;
             bt_cajeros.FlatAppearance.BorderSize = 0;
             bt_cajeros.FlatStyle = FlatStyle.Flat;
             bt_cajeros.Font = new Font("Century Gothic", 14.25F);
@@ -107,10 +107,9 @@
             bt_cajeros.IconFont = FontAwesome.Sharp.IconFont.Auto;
             bt_cajeros.IconSize = 30;
             bt_cajeros.ImageAlign = ContentAlignment.MiddleLeft;
-            bt_cajeros.Location = new Point(0, 79);
-            bt_cajeros.Margin = new Padding(3, 4, 3, 4);
+            bt_cajeros.Location = new Point(0, 59);
             bt_cajeros.Name = "bt_cajeros";
-            bt_cajeros.Size = new Size(275, 67);
+            bt_cajeros.Size = new Size(241, 50);
             bt_cajeros.TabIndex = 1;
             bt_cajeros.Text = "Cajeros";
             bt_cajeros.TextAlign = ContentAlignment.MiddleLeft;
@@ -121,6 +120,7 @@
             // bt_servicios
             // 
             bt_servicios.BackColor = Color.FromArgb(38, 39, 59);
+            bt_servicios.Cursor = Cursors.Hand;
             bt_servicios.FlatAppearance.BorderSize = 0;
             bt_servicios.FlatStyle = FlatStyle.Flat;
             bt_servicios.Font = new Font("Century Gothic", 14.25F);
@@ -130,10 +130,9 @@
             bt_servicios.IconFont = FontAwesome.Sharp.IconFont.Auto;
             bt_servicios.IconSize = 30;
             bt_servicios.ImageAlign = ContentAlignment.MiddleLeft;
-            bt_servicios.Location = new Point(0, 153);
-            bt_servicios.Margin = new Padding(3, 4, 3, 4);
+            bt_servicios.Location = new Point(0, 115);
             bt_servicios.Name = "bt_servicios";
-            bt_servicios.Size = new Size(275, 67);
+            bt_servicios.Size = new Size(241, 50);
             bt_servicios.TabIndex = 2;
             bt_servicios.Text = "Servicios";
             bt_servicios.TextAlign = ContentAlignment.MiddleLeft;
@@ -144,6 +143,7 @@
             // bt_ventanillas
             // 
             bt_ventanillas.BackColor = Color.FromArgb(38, 39, 59);
+            bt_ventanillas.Cursor = Cursors.Hand;
             bt_ventanillas.FlatAppearance.BorderSize = 0;
             bt_ventanillas.FlatStyle = FlatStyle.Flat;
             bt_ventanillas.Font = new Font("Century Gothic", 14.25F);
@@ -153,10 +153,9 @@
             bt_ventanillas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             bt_ventanillas.IconSize = 30;
             bt_ventanillas.ImageAlign = ContentAlignment.MiddleLeft;
-            bt_ventanillas.Location = new Point(0, 216);
-            bt_ventanillas.Margin = new Padding(3, 4, 3, 4);
+            bt_ventanillas.Location = new Point(0, 162);
             bt_ventanillas.Name = "bt_ventanillas";
-            bt_ventanillas.Size = new Size(275, 67);
+            bt_ventanillas.Size = new Size(241, 50);
             bt_ventanillas.TabIndex = 3;
             bt_ventanillas.Text = "Ventanillas";
             bt_ventanillas.TextAlign = ContentAlignment.MiddleLeft;
@@ -167,6 +166,7 @@
             // bt_atenciones
             // 
             bt_atenciones.BackColor = Color.FromArgb(38, 39, 59);
+            bt_atenciones.Cursor = Cursors.Hand;
             bt_atenciones.FlatAppearance.BorderSize = 0;
             bt_atenciones.FlatStyle = FlatStyle.Flat;
             bt_atenciones.Font = new Font("Century Gothic", 14.25F);
@@ -176,10 +176,9 @@
             bt_atenciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
             bt_atenciones.IconSize = 30;
             bt_atenciones.ImageAlign = ContentAlignment.MiddleLeft;
-            bt_atenciones.Location = new Point(0, 291);
-            bt_atenciones.Margin = new Padding(3, 4, 3, 4);
+            bt_atenciones.Location = new Point(0, 218);
             bt_atenciones.Name = "bt_atenciones";
-            bt_atenciones.Size = new Size(275, 67);
+            bt_atenciones.Size = new Size(241, 50);
             bt_atenciones.TabIndex = 4;
             bt_atenciones.Text = "Atenciones";
             bt_atenciones.TextAlign = ContentAlignment.MiddleLeft;
@@ -190,6 +189,7 @@
             // bt_reportes
             // 
             bt_reportes.BackColor = Color.FromArgb(38, 39, 59);
+            bt_reportes.Cursor = Cursors.Hand;
             bt_reportes.FlatAppearance.BorderSize = 0;
             bt_reportes.FlatStyle = FlatStyle.Flat;
             bt_reportes.Font = new Font("Century Gothic", 14.25F);
@@ -199,10 +199,9 @@
             bt_reportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             bt_reportes.IconSize = 30;
             bt_reportes.ImageAlign = ContentAlignment.MiddleLeft;
-            bt_reportes.Location = new Point(0, 365);
-            bt_reportes.Margin = new Padding(3, 4, 3, 4);
+            bt_reportes.Location = new Point(0, 274);
             bt_reportes.Name = "bt_reportes";
-            bt_reportes.Size = new Size(275, 67);
+            bt_reportes.Size = new Size(241, 50);
             bt_reportes.TabIndex = 5;
             bt_reportes.Text = "Reportes";
             bt_reportes.TextAlign = ContentAlignment.MiddleLeft;
@@ -220,21 +219,19 @@
             panel3.Controls.Add(bt_cajeros);
             panel3.Controls.Add(bt_ventanillas);
             panel3.Controls.Add(bt_servicios);
-            panel3.Location = new Point(0, 205);
-            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.Location = new Point(0, 154);
             panel3.Name = "panel3";
-            panel3.Size = new Size(279, 497);
+            panel3.Size = new Size(244, 373);
             panel3.TabIndex = 9;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1239, 703);
+            ClientSize = new Size(1084, 527);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(PanelContenedor);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             panel2.ResumeLayout(false);

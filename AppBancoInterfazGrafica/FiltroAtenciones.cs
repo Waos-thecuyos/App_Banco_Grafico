@@ -19,9 +19,9 @@ namespace AppBancoInterfazGrafica
         {
             InitializeComponent();
             BordeInferior = new Panel();
-            BordeInferior.Size = new Size(225, 3);
+            BordeInferior.Size = new Size(280, 4);
             panel1.Controls.Add(BordeInferior);
-            ActivarBoton(iconButton1);
+            ActivarBoton(bt_atendidos);
         }
 
         // **** Control de Pestañas ****
@@ -35,7 +35,7 @@ namespace AppBancoInterfazGrafica
                 botonSeleccionado.IconColor = Color.Pink;
 
                 BordeInferior.BackColor = Color.Pink;
-                BordeInferior.Location = new Point(botonSeleccionado.Location.X, 88);
+                BordeInferior.Location = new Point(botonSeleccionado.Location.X, 69);
                 BordeInferior.Visible = true;
                 BordeInferior.BringToFront();
             }

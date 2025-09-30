@@ -36,12 +36,13 @@
             label6 = new Label();
             label7 = new Label();
             panel1 = new Panel();
-            rjTextBox1 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox2 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox3 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox4 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox5 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox6 = new CustomControls.RJControls.RJTextBox();
+            bt_buscar = new FontAwesome.Sharp.IconButton();
+            tb_num_ticket = new CustomControls.RJControls.RJTextBox();
+            tb_num_ventanilla = new CustomControls.RJControls.RJTextBox();
+            tb_cajero = new CustomControls.RJControls.RJTextBox();
+            tb_tipo_servicio = new CustomControls.RJControls.RJTextBox();
+            tb_prioridad = new CustomControls.RJControls.RJTextBox();
+            tb_recibio_atencion = new CustomControls.RJControls.RJTextBox();
             panel2 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -127,7 +128,8 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(58, 59, 94);
-            panel1.Controls.Add(rjTextBox1);
+            panel1.Controls.Add(bt_buscar);
+            panel1.Controls.Add(tb_num_ticket);
             panel1.Controls.Add(label2);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -135,149 +137,170 @@
             panel1.Size = new Size(840, 68);
             panel1.TabIndex = 8;
             // 
-            // rjTextBox1
+            // bt_buscar
             // 
-            rjTextBox1.BackColor = Color.FromArgb(58, 59, 94);
-            rjTextBox1.BorderColor = Color.MediumSlateBlue;
-            rjTextBox1.BorderFocusColor = Color.HotPink;
-            rjTextBox1.BorderRadius = 10;
-            rjTextBox1.BorderSize = 2;
-            rjTextBox1.Font = new Font("Segoe UI", 9.5F);
-            rjTextBox1.ForeColor = Color.LightGray;
-            rjTextBox1.Location = new Point(199, 15);
-            rjTextBox1.Multiline = false;
-            rjTextBox1.Name = "rjTextBox1";
-            rjTextBox1.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox1.PasswordChar = false;
-            rjTextBox1.PlaceholderColor = Color.DarkGray;
-            rjTextBox1.PlaceholderText = "";
-            rjTextBox1.ReadOnly = false;
-            rjTextBox1.Size = new Size(304, 32);
-            rjTextBox1.TabIndex = 4;
-            rjTextBox1.Texts = "";
-            rjTextBox1.UnderlinedStyle = false;
+            bt_buscar.Cursor = Cursors.Hand;
+            bt_buscar.FlatAppearance.BorderColor = Color.HotPink;
+            bt_buscar.FlatAppearance.BorderSize = 2;
+            bt_buscar.FlatStyle = FlatStyle.Flat;
+            bt_buscar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            bt_buscar.ForeColor = Color.HotPink;
+            bt_buscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            bt_buscar.IconColor = Color.HotPink;
+            bt_buscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            bt_buscar.IconSize = 27;
+            bt_buscar.Location = new Point(545, 12);
+            bt_buscar.Name = "bt_buscar";
+            bt_buscar.Size = new Size(103, 47);
+            bt_buscar.TabIndex = 5;
+            bt_buscar.Text = "Buscar";
+            bt_buscar.TextAlign = ContentAlignment.MiddleLeft;
+            bt_buscar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            bt_buscar.UseVisualStyleBackColor = true;
             // 
-            // rjTextBox2
+            // tb_num_ticket
             // 
-            rjTextBox2.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox2.BorderColor = Color.HotPink;
-            rjTextBox2.BorderFocusColor = Color.HotPink;
-            rjTextBox2.BorderRadius = 0;
-            rjTextBox2.BorderSize = 2;
-            rjTextBox2.Font = new Font("Century Gothic", 9.75F);
-            rjTextBox2.ForeColor = Color.DarkGray;
-            rjTextBox2.Location = new Point(219, 14);
-            rjTextBox2.Multiline = false;
-            rjTextBox2.Name = "rjTextBox2";
-            rjTextBox2.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox2.PasswordChar = false;
-            rjTextBox2.PlaceholderColor = Color.DarkGray;
-            rjTextBox2.PlaceholderText = "";
-            rjTextBox2.ReadOnly = true;
-            rjTextBox2.Size = new Size(163, 32);
-            rjTextBox2.TabIndex = 9;
-            rjTextBox2.Texts = "";
-            rjTextBox2.UnderlinedStyle = true;
+            tb_num_ticket.BackColor = Color.FromArgb(58, 59, 94);
+            tb_num_ticket.BorderColor = Color.MediumSlateBlue;
+            tb_num_ticket.BorderFocusColor = Color.HotPink;
+            tb_num_ticket.BorderRadius = 10;
+            tb_num_ticket.BorderSize = 2;
+            tb_num_ticket.Font = new Font("Segoe UI", 9.5F);
+            tb_num_ticket.ForeColor = Color.LightGray;
+            tb_num_ticket.Location = new Point(199, 15);
+            tb_num_ticket.Multiline = false;
+            tb_num_ticket.Name = "tb_num_ticket";
+            tb_num_ticket.Padding = new Padding(10, 7, 10, 7);
+            tb_num_ticket.PasswordChar = false;
+            tb_num_ticket.PlaceholderColor = Color.DarkGray;
+            tb_num_ticket.PlaceholderText = "";
+            tb_num_ticket.ReadOnly = false;
+            tb_num_ticket.Size = new Size(304, 32);
+            tb_num_ticket.TabIndex = 4;
+            tb_num_ticket.Texts = "";
+            tb_num_ticket.UnderlinedStyle = false;
             // 
-            // rjTextBox3
+            // tb_num_ventanilla
             // 
-            rjTextBox3.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox3.BorderColor = Color.HotPink;
-            rjTextBox3.BorderFocusColor = Color.HotPink;
-            rjTextBox3.BorderRadius = 0;
-            rjTextBox3.BorderSize = 2;
-            rjTextBox3.Font = new Font("Century Gothic", 9.75F);
-            rjTextBox3.ForeColor = Color.DarkGray;
-            rjTextBox3.Location = new Point(591, 14);
-            rjTextBox3.Multiline = false;
-            rjTextBox3.Name = "rjTextBox3";
-            rjTextBox3.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox3.PasswordChar = false;
-            rjTextBox3.PlaceholderColor = Color.DarkGray;
-            rjTextBox3.PlaceholderText = "";
-            rjTextBox3.ReadOnly = true;
-            rjTextBox3.Size = new Size(163, 32);
-            rjTextBox3.TabIndex = 10;
-            rjTextBox3.Texts = "";
-            rjTextBox3.UnderlinedStyle = true;
+            tb_num_ventanilla.BackColor = Color.FromArgb(75, 57, 94);
+            tb_num_ventanilla.BorderColor = Color.HotPink;
+            tb_num_ventanilla.BorderFocusColor = Color.HotPink;
+            tb_num_ventanilla.BorderRadius = 0;
+            tb_num_ventanilla.BorderSize = 2;
+            tb_num_ventanilla.Font = new Font("Century Gothic", 9.75F);
+            tb_num_ventanilla.ForeColor = Color.DarkGray;
+            tb_num_ventanilla.Location = new Point(219, 14);
+            tb_num_ventanilla.Multiline = false;
+            tb_num_ventanilla.Name = "tb_num_ventanilla";
+            tb_num_ventanilla.Padding = new Padding(10, 7, 10, 7);
+            tb_num_ventanilla.PasswordChar = false;
+            tb_num_ventanilla.PlaceholderColor = Color.DarkGray;
+            tb_num_ventanilla.PlaceholderText = "";
+            tb_num_ventanilla.ReadOnly = true;
+            tb_num_ventanilla.Size = new Size(163, 32);
+            tb_num_ventanilla.TabIndex = 9;
+            tb_num_ventanilla.Texts = "";
+            tb_num_ventanilla.UnderlinedStyle = true;
             // 
-            // rjTextBox4
+            // tb_cajero
             // 
-            rjTextBox4.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox4.BorderColor = Color.HotPink;
-            rjTextBox4.BorderFocusColor = Color.HotPink;
-            rjTextBox4.BorderRadius = 0;
-            rjTextBox4.BorderSize = 2;
-            rjTextBox4.Font = new Font("Century Gothic", 9.75F);
-            rjTextBox4.ForeColor = Color.DarkGray;
-            rjTextBox4.Location = new Point(284, 87);
-            rjTextBox4.Multiline = false;
-            rjTextBox4.Name = "rjTextBox4";
-            rjTextBox4.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox4.PasswordChar = false;
-            rjTextBox4.PlaceholderColor = Color.DarkGray;
-            rjTextBox4.PlaceholderText = "";
-            rjTextBox4.ReadOnly = true;
-            rjTextBox4.Size = new Size(229, 32);
-            rjTextBox4.TabIndex = 11;
-            rjTextBox4.Texts = "";
-            rjTextBox4.UnderlinedStyle = true;
+            tb_cajero.BackColor = Color.FromArgb(75, 57, 94);
+            tb_cajero.BorderColor = Color.HotPink;
+            tb_cajero.BorderFocusColor = Color.HotPink;
+            tb_cajero.BorderRadius = 0;
+            tb_cajero.BorderSize = 2;
+            tb_cajero.Font = new Font("Century Gothic", 9.75F);
+            tb_cajero.ForeColor = Color.DarkGray;
+            tb_cajero.Location = new Point(591, 14);
+            tb_cajero.Multiline = false;
+            tb_cajero.Name = "tb_cajero";
+            tb_cajero.Padding = new Padding(10, 7, 10, 7);
+            tb_cajero.PasswordChar = false;
+            tb_cajero.PlaceholderColor = Color.DarkGray;
+            tb_cajero.PlaceholderText = "";
+            tb_cajero.ReadOnly = true;
+            tb_cajero.Size = new Size(163, 32);
+            tb_cajero.TabIndex = 10;
+            tb_cajero.Texts = "";
+            tb_cajero.UnderlinedStyle = true;
             // 
-            // rjTextBox5
+            // tb_tipo_servicio
             // 
-            rjTextBox5.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox5.BorderColor = Color.HotPink;
-            rjTextBox5.BorderFocusColor = Color.HotPink;
-            rjTextBox5.BorderRadius = 0;
-            rjTextBox5.BorderSize = 2;
-            rjTextBox5.Font = new Font("Century Gothic", 9.75F);
-            rjTextBox5.ForeColor = Color.DarkGray;
-            rjTextBox5.Location = new Point(284, 125);
-            rjTextBox5.Multiline = false;
-            rjTextBox5.Name = "rjTextBox5";
-            rjTextBox5.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox5.PasswordChar = false;
-            rjTextBox5.PlaceholderColor = Color.DarkGray;
-            rjTextBox5.PlaceholderText = "";
-            rjTextBox5.ReadOnly = true;
-            rjTextBox5.Size = new Size(229, 32);
-            rjTextBox5.TabIndex = 12;
-            rjTextBox5.Texts = "";
-            rjTextBox5.UnderlinedStyle = true;
+            tb_tipo_servicio.BackColor = Color.FromArgb(75, 57, 94);
+            tb_tipo_servicio.BorderColor = Color.HotPink;
+            tb_tipo_servicio.BorderFocusColor = Color.HotPink;
+            tb_tipo_servicio.BorderRadius = 0;
+            tb_tipo_servicio.BorderSize = 2;
+            tb_tipo_servicio.Font = new Font("Century Gothic", 9.75F);
+            tb_tipo_servicio.ForeColor = Color.DarkGray;
+            tb_tipo_servicio.Location = new Point(284, 87);
+            tb_tipo_servicio.Multiline = false;
+            tb_tipo_servicio.Name = "tb_tipo_servicio";
+            tb_tipo_servicio.Padding = new Padding(10, 7, 10, 7);
+            tb_tipo_servicio.PasswordChar = false;
+            tb_tipo_servicio.PlaceholderColor = Color.DarkGray;
+            tb_tipo_servicio.PlaceholderText = "";
+            tb_tipo_servicio.ReadOnly = true;
+            tb_tipo_servicio.Size = new Size(229, 32);
+            tb_tipo_servicio.TabIndex = 11;
+            tb_tipo_servicio.Texts = "";
+            tb_tipo_servicio.UnderlinedStyle = true;
             // 
-            // rjTextBox6
+            // tb_prioridad
             // 
-            rjTextBox6.BackColor = Color.FromArgb(75, 57, 94);
-            rjTextBox6.BorderColor = Color.HotPink;
-            rjTextBox6.BorderFocusColor = Color.HotPink;
-            rjTextBox6.BorderRadius = 0;
-            rjTextBox6.BorderSize = 2;
-            rjTextBox6.Font = new Font("Century Gothic", 9.75F);
-            rjTextBox6.ForeColor = Color.DarkGray;
-            rjTextBox6.Location = new Point(284, 163);
-            rjTextBox6.Multiline = false;
-            rjTextBox6.Name = "rjTextBox6";
-            rjTextBox6.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox6.PasswordChar = false;
-            rjTextBox6.PlaceholderColor = Color.DarkGray;
-            rjTextBox6.PlaceholderText = "";
-            rjTextBox6.ReadOnly = true;
-            rjTextBox6.Size = new Size(229, 32);
-            rjTextBox6.TabIndex = 13;
-            rjTextBox6.Texts = "";
-            rjTextBox6.UnderlinedStyle = true;
+            tb_prioridad.BackColor = Color.FromArgb(75, 57, 94);
+            tb_prioridad.BorderColor = Color.HotPink;
+            tb_prioridad.BorderFocusColor = Color.HotPink;
+            tb_prioridad.BorderRadius = 0;
+            tb_prioridad.BorderSize = 2;
+            tb_prioridad.Font = new Font("Century Gothic", 9.75F);
+            tb_prioridad.ForeColor = Color.DarkGray;
+            tb_prioridad.Location = new Point(284, 125);
+            tb_prioridad.Multiline = false;
+            tb_prioridad.Name = "tb_prioridad";
+            tb_prioridad.Padding = new Padding(10, 7, 10, 7);
+            tb_prioridad.PasswordChar = false;
+            tb_prioridad.PlaceholderColor = Color.DarkGray;
+            tb_prioridad.PlaceholderText = "";
+            tb_prioridad.ReadOnly = true;
+            tb_prioridad.Size = new Size(229, 32);
+            tb_prioridad.TabIndex = 12;
+            tb_prioridad.Texts = "";
+            tb_prioridad.UnderlinedStyle = true;
+            // 
+            // tb_recibio_atencion
+            // 
+            tb_recibio_atencion.BackColor = Color.FromArgb(75, 57, 94);
+            tb_recibio_atencion.BorderColor = Color.HotPink;
+            tb_recibio_atencion.BorderFocusColor = Color.HotPink;
+            tb_recibio_atencion.BorderRadius = 0;
+            tb_recibio_atencion.BorderSize = 2;
+            tb_recibio_atencion.Font = new Font("Century Gothic", 9.75F);
+            tb_recibio_atencion.ForeColor = Color.DarkGray;
+            tb_recibio_atencion.Location = new Point(284, 163);
+            tb_recibio_atencion.Multiline = false;
+            tb_recibio_atencion.Name = "tb_recibio_atencion";
+            tb_recibio_atencion.Padding = new Padding(10, 7, 10, 7);
+            tb_recibio_atencion.PasswordChar = false;
+            tb_recibio_atencion.PlaceholderColor = Color.DarkGray;
+            tb_recibio_atencion.PlaceholderText = "";
+            tb_recibio_atencion.ReadOnly = true;
+            tb_recibio_atencion.Size = new Size(229, 32);
+            tb_recibio_atencion.TabIndex = 13;
+            tb_recibio_atencion.Texts = "";
+            tb_recibio_atencion.UnderlinedStyle = true;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(75, 57, 94);
-            panel2.Controls.Add(rjTextBox2);
-            panel2.Controls.Add(rjTextBox6);
+            panel2.Controls.Add(tb_num_ventanilla);
+            panel2.Controls.Add(tb_recibio_atencion);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(rjTextBox5);
+            panel2.Controls.Add(tb_prioridad);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(rjTextBox4);
+            panel2.Controls.Add(tb_tipo_servicio);
             panel2.Controls.Add(label5);
-            panel2.Controls.Add(rjTextBox3);
+            panel2.Controls.Add(tb_cajero);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label7);
             panel2.Controls.Add(label1);
@@ -312,12 +335,13 @@
         private Label label6;
         private Label label7;
         private Panel panel1;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
-        private CustomControls.RJControls.RJTextBox rjTextBox2;
-        private CustomControls.RJControls.RJTextBox rjTextBox3;
-        private CustomControls.RJControls.RJTextBox rjTextBox4;
-        private CustomControls.RJControls.RJTextBox rjTextBox5;
-        private CustomControls.RJControls.RJTextBox rjTextBox6;
+        private CustomControls.RJControls.RJTextBox tb_num_ticket;
+        private CustomControls.RJControls.RJTextBox tb_num_ventanilla;
+        private CustomControls.RJControls.RJTextBox tb_cajero;
+        private CustomControls.RJControls.RJTextBox tb_tipo_servicio;
+        private CustomControls.RJControls.RJTextBox tb_prioridad;
+        private CustomControls.RJControls.RJTextBox tb_recibio_atencion;
         private Panel panel2;
+        private FontAwesome.Sharp.IconButton bt_buscar;
     }
 }

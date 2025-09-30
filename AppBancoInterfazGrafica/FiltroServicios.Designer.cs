@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            rjComboBox1 = new CustomControls.RJControls.RJComboBox();
+            ComboBox_servicios = new CustomControls.RJControls.RJComboBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             panel2 = new Panel();
+            bt_editar_servicios = new CustomControls.RJControls.RJButton();
+            bt_eliminar_servicios = new CustomControls.RJControls.RJButton();
+            bt_agregar_servicios = new CustomControls.RJControls.RJButton();
             panel3 = new Panel();
             panel4 = new Panel();
-            rjTextBox1 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox2 = new CustomControls.RJControls.RJTextBox();
-            rjButton1 = new CustomControls.RJControls.RJButton();
-            rjButton2 = new CustomControls.RJControls.RJButton();
-            rjButton3 = new CustomControls.RJControls.RJButton();
+            tb_Desc_Servicio = new CustomControls.RJControls.RJTextBox();
+            tb_IDservicio = new CustomControls.RJControls.RJTextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel4.SuspendLayout();
@@ -49,7 +49,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(38, 39, 59);
-            panel1.Controls.Add(rjComboBox1);
+            panel1.Controls.Add(ComboBox_servicios);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -57,27 +57,27 @@
             panel1.Size = new Size(840, 62);
             panel1.TabIndex = 0;
             // 
-            // rjComboBox1
+            // ComboBox_servicios
             // 
-            rjComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
-            rjComboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
-            rjComboBox1.BackColor = Color.FromArgb(38, 39, 59);
-            rjComboBox1.BorderColor = Color.MediumSlateBlue;
-            rjComboBox1.BorderSize = 2;
-            rjComboBox1.DropDownStyle = ComboBoxStyle.DropDown;
-            rjComboBox1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rjComboBox1.ForeColor = Color.Silver;
-            rjComboBox1.IconColor = Color.MediumSlateBlue;
-            rjComboBox1.Items.AddRange(new object[] { "Depósitos", "Retiros", "Pago de préstamos / créditos", "Transferencias", "Pago de servicios", "Pago de tributos y tasas", "Pago de tarjetas de crédito", "Consulta", "Envíos y giros", "Apertura de cuentas" });
-            rjComboBox1.ListBackColor = Color.FromArgb(40, 28, 51);
-            rjComboBox1.ListTextColor = Color.WhiteSmoke;
-            rjComboBox1.Location = new Point(212, 11);
-            rjComboBox1.MinimumSize = new Size(200, 30);
-            rjComboBox1.Name = "rjComboBox1";
-            rjComboBox1.Padding = new Padding(2);
-            rjComboBox1.Size = new Size(288, 30);
-            rjComboBox1.TabIndex = 1;
-            rjComboBox1.Texts = "Seleccione";
+            ComboBox_servicios.AutoCompleteMode = AutoCompleteMode.Suggest;
+            ComboBox_servicios.AutoCompleteSource = AutoCompleteSource.ListItems;
+            ComboBox_servicios.BackColor = Color.FromArgb(38, 39, 59);
+            ComboBox_servicios.BorderColor = Color.MediumSlateBlue;
+            ComboBox_servicios.BorderSize = 2;
+            ComboBox_servicios.DropDownStyle = ComboBoxStyle.DropDown;
+            ComboBox_servicios.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ComboBox_servicios.ForeColor = Color.Silver;
+            ComboBox_servicios.IconColor = Color.MediumSlateBlue;
+            ComboBox_servicios.Items.AddRange(new object[] { "Depósitos", "Retiros", "Pago de préstamos / créditos", "Transferencias", "Pago de servicios", "Pago de tributos y tasas", "Pago de tarjetas de crédito", "Consulta", "Envíos y giros", "Apertura de cuentas" });
+            ComboBox_servicios.ListBackColor = Color.FromArgb(38, 39, 59);
+            ComboBox_servicios.ListTextColor = Color.WhiteSmoke;
+            ComboBox_servicios.Location = new Point(212, 11);
+            ComboBox_servicios.MinimumSize = new Size(200, 30);
+            ComboBox_servicios.Name = "ComboBox_servicios";
+            ComboBox_servicios.Padding = new Padding(2);
+            ComboBox_servicios.Size = new Size(288, 30);
+            ComboBox_servicios.TabIndex = 1;
+            ComboBox_servicios.Texts = "Seleccione";
             // 
             // label1
             // 
@@ -115,14 +115,74 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(75, 57, 94);
-            panel2.Controls.Add(rjButton3);
-            panel2.Controls.Add(rjButton2);
-            panel2.Controls.Add(rjButton1);
+            panel2.Controls.Add(bt_editar_servicios);
+            panel2.Controls.Add(bt_eliminar_servicios);
+            panel2.Controls.Add(bt_agregar_servicios);
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(648, 62);
             panel2.Name = "panel2";
             panel2.Size = new Size(192, 465);
             panel2.TabIndex = 3;
+            // 
+            // bt_editar_servicios
+            // 
+            bt_editar_servicios.BackColor = Color.FromArgb(38, 39, 59);
+            bt_editar_servicios.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_editar_servicios.BorderColor = Color.PaleVioletRed;
+            bt_editar_servicios.BorderRadius = 10;
+            bt_editar_servicios.BorderSize = 0;
+            bt_editar_servicios.Cursor = Cursors.Hand;
+            bt_editar_servicios.FlatAppearance.BorderSize = 0;
+            bt_editar_servicios.FlatStyle = FlatStyle.Flat;
+            bt_editar_servicios.Font = new Font("Century Gothic", 12F);
+            bt_editar_servicios.ForeColor = Color.LightGray;
+            bt_editar_servicios.Location = new Point(25, 111);
+            bt_editar_servicios.Name = "bt_editar_servicios";
+            bt_editar_servicios.Size = new Size(150, 40);
+            bt_editar_servicios.TabIndex = 2;
+            bt_editar_servicios.Text = "Editar";
+            bt_editar_servicios.TextColor = Color.LightGray;
+            bt_editar_servicios.UseVisualStyleBackColor = false;
+            // 
+            // bt_eliminar_servicios
+            // 
+            bt_eliminar_servicios.BackColor = Color.FromArgb(38, 39, 59);
+            bt_eliminar_servicios.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_eliminar_servicios.BorderColor = Color.PaleVioletRed;
+            bt_eliminar_servicios.BorderRadius = 10;
+            bt_eliminar_servicios.BorderSize = 0;
+            bt_eliminar_servicios.Cursor = Cursors.Hand;
+            bt_eliminar_servicios.FlatAppearance.BorderSize = 0;
+            bt_eliminar_servicios.FlatStyle = FlatStyle.Flat;
+            bt_eliminar_servicios.Font = new Font("Century Gothic", 12F);
+            bt_eliminar_servicios.ForeColor = Color.LightGray;
+            bt_eliminar_servicios.Location = new Point(25, 65);
+            bt_eliminar_servicios.Name = "bt_eliminar_servicios";
+            bt_eliminar_servicios.Size = new Size(150, 40);
+            bt_eliminar_servicios.TabIndex = 1;
+            bt_eliminar_servicios.Text = "Eliminar";
+            bt_eliminar_servicios.TextColor = Color.LightGray;
+            bt_eliminar_servicios.UseVisualStyleBackColor = false;
+            // 
+            // bt_agregar_servicios
+            // 
+            bt_agregar_servicios.BackColor = Color.FromArgb(38, 39, 59);
+            bt_agregar_servicios.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_agregar_servicios.BorderColor = Color.PaleVioletRed;
+            bt_agregar_servicios.BorderRadius = 10;
+            bt_agregar_servicios.BorderSize = 0;
+            bt_agregar_servicios.Cursor = Cursors.Hand;
+            bt_agregar_servicios.FlatAppearance.BorderSize = 0;
+            bt_agregar_servicios.FlatStyle = FlatStyle.Flat;
+            bt_agregar_servicios.Font = new Font("Century Gothic", 12F);
+            bt_agregar_servicios.ForeColor = Color.LightGray;
+            bt_agregar_servicios.Location = new Point(25, 19);
+            bt_agregar_servicios.Name = "bt_agregar_servicios";
+            bt_agregar_servicios.Size = new Size(150, 40);
+            bt_agregar_servicios.TabIndex = 0;
+            bt_agregar_servicios.Text = "Agregar";
+            bt_agregar_servicios.TextColor = Color.LightGray;
+            bt_agregar_servicios.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -135,8 +195,8 @@
             // panel4
             // 
             panel4.BackColor = Color.HotPink;
-            panel4.Controls.Add(rjTextBox2);
-            panel4.Controls.Add(rjTextBox1);
+            panel4.Controls.Add(tb_Desc_Servicio);
+            panel4.Controls.Add(tb_IDservicio);
             panel4.Controls.Add(label2);
             panel4.Controls.Add(label3);
             panel4.Dock = DockStyle.Fill;
@@ -145,106 +205,49 @@
             panel4.Size = new Size(648, 94);
             panel4.TabIndex = 5;
             // 
-            // rjTextBox1
+            // tb_Desc_Servicio
             // 
-            rjTextBox1.BackColor = Color.HotPink;
-            rjTextBox1.BorderColor = Color.MediumSlateBlue;
-            rjTextBox1.BorderFocusColor = Color.DarkMagenta;
-            rjTextBox1.BorderRadius = 0;
-            rjTextBox1.BorderSize = 2;
-            rjTextBox1.Font = new Font("Segoe UI", 9.5F);
-            rjTextBox1.ForeColor = Color.White;
-            rjTextBox1.Location = new Point(195, 8);
-            rjTextBox1.Multiline = false;
-            rjTextBox1.Name = "rjTextBox1";
-            rjTextBox1.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox1.PasswordChar = false;
-            rjTextBox1.PlaceholderColor = Color.Gray;
-            rjTextBox1.PlaceholderText = "";
-            rjTextBox1.ReadOnly = true;
-            rjTextBox1.Size = new Size(385, 32);
-            rjTextBox1.TabIndex = 3;
-            rjTextBox1.Texts = "";
-            rjTextBox1.UnderlinedStyle = true;
+            tb_Desc_Servicio.BackColor = Color.HotPink;
+            tb_Desc_Servicio.BorderColor = Color.MediumSlateBlue;
+            tb_Desc_Servicio.BorderFocusColor = Color.DarkMagenta;
+            tb_Desc_Servicio.BorderRadius = 0;
+            tb_Desc_Servicio.BorderSize = 2;
+            tb_Desc_Servicio.Font = new Font("Segoe UI", 9.5F);
+            tb_Desc_Servicio.ForeColor = Color.White;
+            tb_Desc_Servicio.Location = new Point(195, 46);
+            tb_Desc_Servicio.Multiline = false;
+            tb_Desc_Servicio.Name = "tb_Desc_Servicio";
+            tb_Desc_Servicio.Padding = new Padding(10, 7, 10, 7);
+            tb_Desc_Servicio.PasswordChar = false;
+            tb_Desc_Servicio.PlaceholderColor = Color.Gray;
+            tb_Desc_Servicio.PlaceholderText = "";
+            tb_Desc_Servicio.ReadOnly = true;
+            tb_Desc_Servicio.Size = new Size(385, 32);
+            tb_Desc_Servicio.TabIndex = 4;
+            tb_Desc_Servicio.Texts = "";
+            tb_Desc_Servicio.UnderlinedStyle = true;
             // 
-            // rjTextBox2
+            // tb_IDservicio
             // 
-            rjTextBox2.BackColor = Color.HotPink;
-            rjTextBox2.BorderColor = Color.MediumSlateBlue;
-            rjTextBox2.BorderFocusColor = Color.DarkMagenta;
-            rjTextBox2.BorderRadius = 0;
-            rjTextBox2.BorderSize = 2;
-            rjTextBox2.Font = new Font("Segoe UI", 9.5F);
-            rjTextBox2.ForeColor = Color.White;
-            rjTextBox2.Location = new Point(195, 46);
-            rjTextBox2.Multiline = false;
-            rjTextBox2.Name = "rjTextBox2";
-            rjTextBox2.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox2.PasswordChar = false;
-            rjTextBox2.PlaceholderColor = Color.Gray;
-            rjTextBox2.PlaceholderText = "";
-            rjTextBox2.ReadOnly = true;
-            rjTextBox2.Size = new Size(385, 32);
-            rjTextBox2.TabIndex = 4;
-            rjTextBox2.Texts = "";
-            rjTextBox2.UnderlinedStyle = true;
-            // 
-            // rjButton1
-            // 
-            rjButton1.BackColor = Color.FromArgb(38, 39, 59);
-            rjButton1.BackgroundColor = Color.FromArgb(38, 39, 59);
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 10;
-            rjButton1.BorderSize = 0;
-            rjButton1.FlatAppearance.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.Font = new Font("Century Gothic", 12F);
-            rjButton1.ForeColor = Color.LightGray;
-            rjButton1.Location = new Point(25, 19);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(150, 40);
-            rjButton1.TabIndex = 0;
-            rjButton1.Text = "Agregar";
-            rjButton1.TextColor = Color.LightGray;
-            rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // rjButton2
-            // 
-            rjButton2.BackColor = Color.FromArgb(38, 39, 59);
-            rjButton2.BackgroundColor = Color.FromArgb(38, 39, 59);
-            rjButton2.BorderColor = Color.PaleVioletRed;
-            rjButton2.BorderRadius = 10;
-            rjButton2.BorderSize = 0;
-            rjButton2.FlatAppearance.BorderSize = 0;
-            rjButton2.FlatStyle = FlatStyle.Flat;
-            rjButton2.Font = new Font("Century Gothic", 12F);
-            rjButton2.ForeColor = Color.LightGray;
-            rjButton2.Location = new Point(25, 65);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(150, 40);
-            rjButton2.TabIndex = 1;
-            rjButton2.Text = "Eliminar";
-            rjButton2.TextColor = Color.LightGray;
-            rjButton2.UseVisualStyleBackColor = false;
-            // 
-            // rjButton3
-            // 
-            rjButton3.BackColor = Color.FromArgb(38, 39, 59);
-            rjButton3.BackgroundColor = Color.FromArgb(38, 39, 59);
-            rjButton3.BorderColor = Color.PaleVioletRed;
-            rjButton3.BorderRadius = 10;
-            rjButton3.BorderSize = 0;
-            rjButton3.FlatAppearance.BorderSize = 0;
-            rjButton3.FlatStyle = FlatStyle.Flat;
-            rjButton3.Font = new Font("Century Gothic", 12F);
-            rjButton3.ForeColor = Color.LightGray;
-            rjButton3.Location = new Point(25, 111);
-            rjButton3.Name = "rjButton3";
-            rjButton3.Size = new Size(150, 40);
-            rjButton3.TabIndex = 2;
-            rjButton3.Text = "Editar";
-            rjButton3.TextColor = Color.LightGray;
-            rjButton3.UseVisualStyleBackColor = false;
+            tb_IDservicio.BackColor = Color.HotPink;
+            tb_IDservicio.BorderColor = Color.MediumSlateBlue;
+            tb_IDservicio.BorderFocusColor = Color.DarkMagenta;
+            tb_IDservicio.BorderRadius = 0;
+            tb_IDservicio.BorderSize = 2;
+            tb_IDservicio.Font = new Font("Segoe UI", 9.5F);
+            tb_IDservicio.ForeColor = Color.White;
+            tb_IDservicio.Location = new Point(195, 8);
+            tb_IDservicio.Multiline = false;
+            tb_IDservicio.Name = "tb_IDservicio";
+            tb_IDservicio.Padding = new Padding(10, 7, 10, 7);
+            tb_IDservicio.PasswordChar = false;
+            tb_IDservicio.PlaceholderColor = Color.Gray;
+            tb_IDservicio.PlaceholderText = "";
+            tb_IDservicio.ReadOnly = true;
+            tb_IDservicio.Size = new Size(385, 32);
+            tb_IDservicio.TabIndex = 3;
+            tb_IDservicio.Texts = "";
+            tb_IDservicio.UnderlinedStyle = true;
             // 
             // FiltroServicios
             // 
@@ -269,16 +272,16 @@
 
         private Panel panel1;
         private Label label1;
-        private CustomControls.RJControls.RJComboBox rjComboBox1;
+        private CustomControls.RJControls.RJComboBox ComboBox_servicios;
         private Label label2;
         private Label label3;
         private Panel panel2;
         private Panel panel3;
         private Panel panel4;
-        private CustomControls.RJControls.RJTextBox rjTextBox2;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
-        private CustomControls.RJControls.RJButton rjButton3;
-        private CustomControls.RJControls.RJButton rjButton2;
-        private CustomControls.RJControls.RJButton rjButton1;
+        private CustomControls.RJControls.RJTextBox tb_Desc_Servicio;
+        private CustomControls.RJControls.RJTextBox tb_IDservicio;
+        private CustomControls.RJControls.RJButton bt_editar_servicios;
+        private CustomControls.RJControls.RJButton bt_eliminar_servicios;
+        private CustomControls.RJControls.RJButton bt_agregar_servicios;
     }
 }
