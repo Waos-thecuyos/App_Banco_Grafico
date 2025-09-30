@@ -29,275 +29,261 @@
         private void InitializeComponent()
         {
             formulario_clientes = new Panel();
-            tb_ninhos = new TextBox();
+            tb_monto = new CustomControls.RJControls.RJTextBox();
+            tb_telefono = new CustomControls.RJControls.RJTextBox();
+            tb_email = new CustomControls.RJControls.RJTextBox();
+            tb_nacimiento = new CustomControls.RJControls.RJTextBox();
+            tb_nombres = new CustomControls.RJControls.RJTextBox();
+            tb_dni = new CustomControls.RJControls.RJTextBox();
+            checkBox2 = new CheckBox();
             checkBox1 = new CheckBox();
-            tb_monto = new TextBox();
-            label8 = new Label();
-            label4 = new Label();
-            tb_telefono = new TextBox();
-            label5 = new Label();
-            tb_email = new TextBox();
-            label7 = new Label();
-            tb_FechaNac = new TextBox();
-            tb_Nombres = new TextBox();
-            label6 = new Label();
-            tb_DNI = new TextBox();
             label3 = new Label();
+            label8 = new Label();
             label2 = new Label();
-            label1 = new Label();
-            bt_cliente_agregar = new CustomControls.RJControls.RJButton();
-            bt_cliente_eliminar = new CustomControls.RJControls.RJButton();
+            label7 = new Label();
+            label6 = new Label();
             rjButton1 = new CustomControls.RJControls.RJButton();
+            bt_cliente_eliminar = new CustomControls.RJControls.RJButton();
+            bt_cliente_agregar = new CustomControls.RJControls.RJButton();
+            label1 = new Label();
             formulario_clientes.SuspendLayout();
             SuspendLayout();
             // 
             // formulario_clientes
             // 
-            formulario_clientes.BackColor = SystemColors.Window;
-            formulario_clientes.Controls.Add(tb_ninhos);
-            formulario_clientes.Controls.Add(checkBox1);
+            formulario_clientes.BackColor = Color.FromArgb(75, 57, 94);
             formulario_clientes.Controls.Add(tb_monto);
-            formulario_clientes.Controls.Add(label8);
-            formulario_clientes.Controls.Add(label4);
             formulario_clientes.Controls.Add(tb_telefono);
-            formulario_clientes.Controls.Add(label5);
             formulario_clientes.Controls.Add(tb_email);
-            formulario_clientes.Controls.Add(label7);
-            formulario_clientes.Controls.Add(tb_FechaNac);
-            formulario_clientes.Controls.Add(tb_Nombres);
-            formulario_clientes.Controls.Add(label6);
-            formulario_clientes.Controls.Add(tb_DNI);
+            formulario_clientes.Controls.Add(tb_nacimiento);
+            formulario_clientes.Controls.Add(tb_nombres);
+            formulario_clientes.Controls.Add(tb_dni);
+            formulario_clientes.Controls.Add(checkBox2);
+            formulario_clientes.Controls.Add(checkBox1);
             formulario_clientes.Controls.Add(label3);
+            formulario_clientes.Controls.Add(label8);
             formulario_clientes.Controls.Add(label2);
+            formulario_clientes.Controls.Add(label7);
+            formulario_clientes.Controls.Add(label6);
+            formulario_clientes.Controls.Add(rjButton1);
+            formulario_clientes.Controls.Add(bt_cliente_eliminar);
+            formulario_clientes.Controls.Add(bt_cliente_agregar);
             formulario_clientes.Controls.Add(label1);
-            formulario_clientes.Location = new Point(22, 76);
-            formulario_clientes.Margin = new Padding(3, 4, 3, 4);
+            formulario_clientes.Dock = DockStyle.Top;
+            formulario_clientes.Location = new Point(0, 0);
             formulario_clientes.Name = "formulario_clientes";
-            formulario_clientes.Size = new Size(734, 332);
+            formulario_clientes.Size = new Size(840, 287);
             formulario_clientes.TabIndex = 0;
             // 
-            // tb_ninhos
+            // tb_monto
             // 
-            tb_ninhos.BackColor = Color.Gainsboro;
-            tb_ninhos.BorderStyle = BorderStyle.FixedSingle;
-            tb_ninhos.Cursor = Cursors.IBeam;
-            tb_ninhos.Location = new Point(246, 247);
-            tb_ninhos.Margin = new Padding(3, 4, 3, 4);
-            tb_ninhos.Name = "tb_ninhos";
-            tb_ninhos.Size = new Size(463, 27);
-            tb_ninhos.TabIndex = 14;
+            tb_monto.BackColor = Color.FromArgb(75, 57, 94);
+            tb_monto.BorderColor = Color.MediumSlateBlue;
+            tb_monto.BorderFocusColor = Color.HotPink;
+            tb_monto.BorderRadius = 10;
+            tb_monto.BorderSize = 2;
+            tb_monto.Font = new Font("Arial", 9.5F);
+            tb_monto.ForeColor = Color.LightGray;
+            tb_monto.Location = new Point(238, 196);
+            tb_monto.Multiline = false;
+            tb_monto.Name = "tb_monto";
+            tb_monto.Padding = new Padding(10, 7, 10, 7);
+            tb_monto.PasswordChar = false;
+            tb_monto.PlaceholderColor = Color.DarkGray;
+            tb_monto.PlaceholderText = "";
+            tb_monto.Size = new Size(309, 31);
+            tb_monto.TabIndex = 28;
+            tb_monto.Texts = "";
+            tb_monto.UnderlinedStyle = false;
+            // 
+            // tb_telefono
+            // 
+            tb_telefono.BackColor = Color.FromArgb(75, 57, 94);
+            tb_telefono.BorderColor = Color.MediumSlateBlue;
+            tb_telefono.BorderFocusColor = Color.HotPink;
+            tb_telefono.BorderRadius = 10;
+            tb_telefono.BorderSize = 2;
+            tb_telefono.Font = new Font("Arial", 9.5F);
+            tb_telefono.ForeColor = Color.LightGray;
+            tb_telefono.Location = new Point(238, 158);
+            tb_telefono.Multiline = false;
+            tb_telefono.Name = "tb_telefono";
+            tb_telefono.Padding = new Padding(10, 7, 10, 7);
+            tb_telefono.PasswordChar = false;
+            tb_telefono.PlaceholderColor = Color.DarkGray;
+            tb_telefono.PlaceholderText = "";
+            tb_telefono.Size = new Size(309, 31);
+            tb_telefono.TabIndex = 27;
+            tb_telefono.Texts = "";
+            tb_telefono.UnderlinedStyle = false;
+            // 
+            // tb_email
+            // 
+            tb_email.BackColor = Color.FromArgb(75, 57, 94);
+            tb_email.BorderColor = Color.MediumSlateBlue;
+            tb_email.BorderFocusColor = Color.HotPink;
+            tb_email.BorderRadius = 10;
+            tb_email.BorderSize = 2;
+            tb_email.Font = new Font("Arial", 9.5F);
+            tb_email.ForeColor = Color.LightGray;
+            tb_email.Location = new Point(238, 120);
+            tb_email.Multiline = false;
+            tb_email.Name = "tb_email";
+            tb_email.Padding = new Padding(10, 7, 10, 7);
+            tb_email.PasswordChar = false;
+            tb_email.PlaceholderColor = Color.DarkGray;
+            tb_email.PlaceholderText = "";
+            tb_email.Size = new Size(309, 31);
+            tb_email.TabIndex = 26;
+            tb_email.Texts = "";
+            tb_email.UnderlinedStyle = false;
+            // 
+            // tb_nacimiento
+            // 
+            tb_nacimiento.BackColor = Color.FromArgb(75, 57, 94);
+            tb_nacimiento.BorderColor = Color.MediumSlateBlue;
+            tb_nacimiento.BorderFocusColor = Color.HotPink;
+            tb_nacimiento.BorderRadius = 10;
+            tb_nacimiento.BorderSize = 2;
+            tb_nacimiento.Font = new Font("Arial", 9.5F);
+            tb_nacimiento.ForeColor = Color.LightGray;
+            tb_nacimiento.Location = new Point(238, 82);
+            tb_nacimiento.Multiline = false;
+            tb_nacimiento.Name = "tb_nacimiento";
+            tb_nacimiento.Padding = new Padding(10, 7, 10, 7);
+            tb_nacimiento.PasswordChar = false;
+            tb_nacimiento.PlaceholderColor = Color.DarkGray;
+            tb_nacimiento.PlaceholderText = "";
+            tb_nacimiento.Size = new Size(309, 31);
+            tb_nacimiento.TabIndex = 25;
+            tb_nacimiento.Texts = "";
+            tb_nacimiento.UnderlinedStyle = false;
+            // 
+            // tb_nombres
+            // 
+            tb_nombres.BackColor = Color.FromArgb(75, 57, 94);
+            tb_nombres.BorderColor = Color.MediumSlateBlue;
+            tb_nombres.BorderFocusColor = Color.HotPink;
+            tb_nombres.BorderRadius = 10;
+            tb_nombres.BorderSize = 2;
+            tb_nombres.Font = new Font("Arial", 9.5F);
+            tb_nombres.ForeColor = Color.LightGray;
+            tb_nombres.Location = new Point(238, 44);
+            tb_nombres.Multiline = false;
+            tb_nombres.Name = "tb_nombres";
+            tb_nombres.Padding = new Padding(10, 7, 10, 7);
+            tb_nombres.PasswordChar = false;
+            tb_nombres.PlaceholderColor = Color.DarkGray;
+            tb_nombres.PlaceholderText = "";
+            tb_nombres.Size = new Size(309, 31);
+            tb_nombres.TabIndex = 24;
+            tb_nombres.Texts = "";
+            tb_nombres.UnderlinedStyle = false;
+            // 
+            // tb_dni
+            // 
+            tb_dni.BackColor = Color.FromArgb(75, 57, 94);
+            tb_dni.BorderColor = Color.MediumSlateBlue;
+            tb_dni.BorderFocusColor = Color.HotPink;
+            tb_dni.BorderRadius = 10;
+            tb_dni.BorderSize = 2;
+            tb_dni.Font = new Font("Arial", 9.5F);
+            tb_dni.ForeColor = Color.LightGray;
+            tb_dni.Location = new Point(238, 6);
+            tb_dni.Multiline = false;
+            tb_dni.Name = "tb_dni";
+            tb_dni.Padding = new Padding(10, 7, 10, 7);
+            tb_dni.PasswordChar = false;
+            tb_dni.PlaceholderColor = Color.DarkGray;
+            tb_dni.PlaceholderText = "";
+            tb_dni.Size = new Size(309, 31);
+            tb_dni.TabIndex = 23;
+            tb_dni.Texts = "";
+            tb_dni.UnderlinedStyle = false;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Font = new Font("Century Gothic", 12F);
+            checkBox2.ForeColor = Color.LightGray;
+            checkBox2.Location = new Point(408, 250);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(139, 25);
+            checkBox2.TabIndex = 22;
+            checkBox2.Text = "Discapacidad";
+            checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(246, 297);
-            checkBox1.Margin = new Padding(3, 4, 3, 4);
+            checkBox1.Font = new Font("Century Gothic", 12F);
+            checkBox1.ForeColor = Color.LightGray;
+            checkBox1.Location = new Point(263, 250);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(18, 17);
+            checkBox1.Size = new Size(70, 25);
             checkBox1.TabIndex = 15;
+            checkBox1.Text = "Niños";
             checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // tb_monto
-            // 
-            tb_monto.BackColor = Color.Gainsboro;
-            tb_monto.BorderStyle = BorderStyle.FixedSingle;
-            tb_monto.Cursor = Cursors.IBeam;
-            tb_monto.Location = new Point(246, 205);
-            tb_monto.Margin = new Padding(3, 4, 3, 4);
-            tb_monto.Name = "tb_monto";
-            tb_monto.Size = new Size(463, 27);
-            tb_monto.TabIndex = 13;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Century Gothic", 9.75F);
-            label8.ForeColor = Color.Black;
-            label8.Location = new Point(24, 213);
-            label8.Name = "label8";
-            label8.Size = new Size(71, 21);
-            label8.TabIndex = 7;
-            label8.Text = "Monto:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Century Gothic", 9.75F);
-            label4.ForeColor = Color.Black;
-            label4.Location = new Point(24, 293);
-            label4.Name = "label4";
-            label4.Size = new Size(135, 21);
-            label4.TabIndex = 3;
-            label4.Text = "Discapacidad:";
-            // 
-            // tb_telefono
-            // 
-            tb_telefono.BackColor = Color.Gainsboro;
-            tb_telefono.BorderStyle = BorderStyle.FixedSingle;
-            tb_telefono.Cursor = Cursors.IBeam;
-            tb_telefono.Location = new Point(246, 167);
-            tb_telefono.Margin = new Padding(3, 4, 3, 4);
-            tb_telefono.Name = "tb_telefono";
-            tb_telefono.Size = new Size(463, 27);
-            tb_telefono.TabIndex = 12;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Century Gothic", 9.75F);
-            label5.ForeColor = Color.Black;
-            label5.Location = new Point(24, 255);
-            label5.Name = "label5";
-            label5.Size = new Size(59, 21);
-            label5.TabIndex = 4;
-            label5.Text = "Niños:";
-            // 
-            // tb_email
-            // 
-            tb_email.BackColor = Color.Gainsboro;
-            tb_email.BorderStyle = BorderStyle.FixedSingle;
-            tb_email.Cursor = Cursors.IBeam;
-            tb_email.Location = new Point(246, 128);
-            tb_email.Margin = new Padding(3, 4, 3, 4);
-            tb_email.Name = "tb_email";
-            tb_email.Size = new Size(463, 27);
-            tb_email.TabIndex = 11;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Century Gothic", 9.75F);
-            label7.ForeColor = Color.Black;
-            label7.Location = new Point(24, 175);
-            label7.Name = "label7";
-            label7.Size = new Size(85, 21);
-            label7.TabIndex = 6;
-            label7.Text = "Teléfono:";
-            // 
-            // tb_FechaNac
-            // 
-            tb_FechaNac.BackColor = Color.Gainsboro;
-            tb_FechaNac.BorderStyle = BorderStyle.FixedSingle;
-            tb_FechaNac.Cursor = Cursors.IBeam;
-            tb_FechaNac.Location = new Point(246, 89);
-            tb_FechaNac.Margin = new Padding(3, 4, 3, 4);
-            tb_FechaNac.Name = "tb_FechaNac";
-            tb_FechaNac.Size = new Size(463, 27);
-            tb_FechaNac.TabIndex = 10;
-            // 
-            // tb_Nombres
-            // 
-            tb_Nombres.BackColor = Color.Gainsboro;
-            tb_Nombres.BorderStyle = BorderStyle.FixedSingle;
-            tb_Nombres.Cursor = Cursors.IBeam;
-            tb_Nombres.Location = new Point(246, 51);
-            tb_Nombres.Margin = new Padding(3, 4, 3, 4);
-            tb_Nombres.Name = "tb_Nombres";
-            tb_Nombres.Size = new Size(463, 27);
-            tb_Nombres.TabIndex = 9;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Century Gothic", 9.75F);
-            label6.ForeColor = Color.Black;
-            label6.Location = new Point(24, 136);
-            label6.Name = "label6";
-            label6.Size = new Size(57, 21);
-            label6.TabIndex = 5;
-            label6.Text = "Email:";
-            // 
-            // tb_DNI
-            // 
-            tb_DNI.BackColor = Color.Gainsboro;
-            tb_DNI.BorderStyle = BorderStyle.FixedSingle;
-            tb_DNI.Cursor = Cursors.IBeam;
-            tb_DNI.Location = new Point(246, 12);
-            tb_DNI.Margin = new Padding(3, 4, 3, 4);
-            tb_DNI.Name = "tb_DNI";
-            tb_DNI.Size = new Size(463, 27);
-            tb_DNI.TabIndex = 8;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Century Gothic", 9.75F);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(24, 97);
+            label3.Font = new Font("Century Gothic", 12F);
+            label3.ForeColor = Color.LightGray;
+            label3.Location = new Point(30, 93);
             label3.Name = "label3";
-            label3.Size = new Size(196, 21);
+            label3.Size = new Size(183, 21);
             label3.TabIndex = 2;
             label3.Text = "Fecha de Nacimiento:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Century Gothic", 12F);
+            label8.ForeColor = Color.LightGray;
+            label8.Location = new Point(30, 207);
+            label8.Name = "label8";
+            label8.Size = new Size(66, 21);
+            label8.TabIndex = 7;
+            label8.Text = "Monto:";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Century Gothic", 9.75F);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(24, 59);
+            label2.Font = new Font("Century Gothic", 12F);
+            label2.ForeColor = Color.LightGray;
+            label2.Location = new Point(30, 55);
             label2.Name = "label2";
-            label2.Size = new Size(182, 21);
+            label2.Size = new Size(169, 21);
             label2.TabIndex = 1;
             label2.Text = "Nombres y Apellidos:";
             // 
-            // label1
+            // label7
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Century Gothic", 9.75F);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(24, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(46, 21);
-            label1.TabIndex = 0;
-            label1.Text = "DNI:";
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Century Gothic", 12F);
+            label7.ForeColor = Color.LightGray;
+            label7.Location = new Point(30, 169);
+            label7.Name = "label7";
+            label7.Size = new Size(80, 21);
+            label7.TabIndex = 6;
+            label7.Text = "Teléfono:";
             // 
-            // bt_cliente_agregar
+            // label6
             // 
-            bt_cliente_agregar.BackColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_agregar.BackgroundColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_agregar.BorderColor = Color.PaleVioletRed;
-            bt_cliente_agregar.BorderRadius = 10;
-            bt_cliente_agregar.BorderSize = 0;
-            bt_cliente_agregar.FlatAppearance.BorderSize = 0;
-            bt_cliente_agregar.FlatStyle = FlatStyle.Flat;
-            bt_cliente_agregar.Font = new Font("Century Gothic", 12F);
-            bt_cliente_agregar.ForeColor = Color.DarkGray;
-            bt_cliente_agregar.Location = new Point(762, 76);
-            bt_cliente_agregar.Margin = new Padding(3, 4, 3, 4);
-            bt_cliente_agregar.Name = "bt_cliente_agregar";
-            bt_cliente_agregar.Size = new Size(171, 53);
-            bt_cliente_agregar.TabIndex = 1;
-            bt_cliente_agregar.Text = "Agregar";
-            bt_cliente_agregar.TextColor = Color.DarkGray;
-            bt_cliente_agregar.UseVisualStyleBackColor = false;
-            // 
-            // bt_cliente_eliminar
-            // 
-            bt_cliente_eliminar.BackColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_eliminar.BackgroundColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_eliminar.BorderColor = Color.PaleVioletRed;
-            bt_cliente_eliminar.BorderRadius = 10;
-            bt_cliente_eliminar.BorderSize = 0;
-            bt_cliente_eliminar.FlatAppearance.BorderSize = 0;
-            bt_cliente_eliminar.FlatStyle = FlatStyle.Flat;
-            bt_cliente_eliminar.Font = new Font("Century Gothic", 12F);
-            bt_cliente_eliminar.ForeColor = Color.DarkGray;
-            bt_cliente_eliminar.Location = new Point(762, 137);
-            bt_cliente_eliminar.Margin = new Padding(3, 4, 3, 4);
-            bt_cliente_eliminar.Name = "bt_cliente_eliminar";
-            bt_cliente_eliminar.Size = new Size(171, 53);
-            bt_cliente_eliminar.TabIndex = 2;
-            bt_cliente_eliminar.Text = "Eliminar";
-            bt_cliente_eliminar.TextColor = Color.DarkGray;
-            bt_cliente_eliminar.UseVisualStyleBackColor = false;
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Century Gothic", 12F);
+            label6.ForeColor = Color.LightGray;
+            label6.Location = new Point(30, 131);
+            label6.Name = "label6";
+            label6.Size = new Size(55, 21);
+            label6.TabIndex = 5;
+            label6.Text = "Email:";
             // 
             // rjButton1
             // 
@@ -309,28 +295,73 @@
             rjButton1.FlatAppearance.BorderSize = 0;
             rjButton1.FlatStyle = FlatStyle.Flat;
             rjButton1.Font = new Font("Century Gothic", 12F);
-            rjButton1.ForeColor = Color.DarkGray;
-            rjButton1.Location = new Point(762, 199);
-            rjButton1.Margin = new Padding(3, 4, 3, 4);
+            rjButton1.ForeColor = Color.LightGray;
+            rjButton1.Location = new Point(625, 104);
             rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(171, 53);
+            rjButton1.Size = new Size(150, 40);
             rjButton1.TabIndex = 3;
             rjButton1.Text = "Editar";
-            rjButton1.TextColor = Color.DarkGray;
+            rjButton1.TextColor = Color.LightGray;
             rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // bt_cliente_eliminar
+            // 
+            bt_cliente_eliminar.BackColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_eliminar.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_eliminar.BorderColor = Color.PaleVioletRed;
+            bt_cliente_eliminar.BorderRadius = 10;
+            bt_cliente_eliminar.BorderSize = 0;
+            bt_cliente_eliminar.FlatAppearance.BorderSize = 0;
+            bt_cliente_eliminar.FlatStyle = FlatStyle.Flat;
+            bt_cliente_eliminar.Font = new Font("Century Gothic", 12F);
+            bt_cliente_eliminar.ForeColor = Color.LightGray;
+            bt_cliente_eliminar.Location = new Point(625, 61);
+            bt_cliente_eliminar.Name = "bt_cliente_eliminar";
+            bt_cliente_eliminar.Size = new Size(150, 40);
+            bt_cliente_eliminar.TabIndex = 2;
+            bt_cliente_eliminar.Text = "Eliminar";
+            bt_cliente_eliminar.TextColor = Color.LightGray;
+            bt_cliente_eliminar.UseVisualStyleBackColor = false;
+            // 
+            // bt_cliente_agregar
+            // 
+            bt_cliente_agregar.BackColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_agregar.BackgroundColor = Color.FromArgb(38, 39, 59);
+            bt_cliente_agregar.BorderColor = Color.PaleVioletRed;
+            bt_cliente_agregar.BorderRadius = 10;
+            bt_cliente_agregar.BorderSize = 0;
+            bt_cliente_agregar.FlatAppearance.BorderSize = 0;
+            bt_cliente_agregar.FlatStyle = FlatStyle.Flat;
+            bt_cliente_agregar.Font = new Font("Century Gothic", 12F);
+            bt_cliente_agregar.ForeColor = Color.LightGray;
+            bt_cliente_agregar.Location = new Point(625, 17);
+            bt_cliente_agregar.Name = "bt_cliente_agregar";
+            bt_cliente_agregar.Size = new Size(150, 40);
+            bt_cliente_agregar.TabIndex = 1;
+            bt_cliente_agregar.Text = "Agregar";
+            bt_cliente_agregar.TextColor = Color.LightGray;
+            bt_cliente_agregar.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Century Gothic", 12F);
+            label1.ForeColor = Color.LightGray;
+            label1.Location = new Point(30, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(43, 21);
+            label1.TabIndex = 0;
+            label1.Text = "DNI:";
             // 
             // FiltroClientes
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(rjButton1);
-            Controls.Add(bt_cliente_eliminar);
-            Controls.Add(bt_cliente_agregar);
             Controls.Add(formulario_clientes);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FiltroClientes";
-            Size = new Size(960, 703);
+            Size = new Size(840, 527);
             formulario_clientes.ResumeLayout(false);
             formulario_clientes.PerformLayout();
             ResumeLayout(false);
@@ -344,19 +375,21 @@
         private CustomControls.RJControls.RJButton rjButton1;
         private Label label2;
         private Label label1;
-        private TextBox tb_Nombres;
-        private TextBox tb_DNI;
         private Label label8;
         private Label label7;
         private Label label6;
         private Label label5;
         private Label label4;
         private Label label3;
-        private TextBox tb_ninhos;
-        private TextBox tb_monto;
-        private TextBox tb_telefono;
-        private TextBox tb_email;
-        private TextBox tb_FechaNac;
         private CheckBox checkBox1;
+        private CustomControls.RJControls.RJTextBox rjTextBox1;
+        private CheckBox checkBox2;
+        private CustomControls.RJControls.RJTextBox tb_dni;
+        private CustomControls.RJControls.RJTextBox tb_monto;
+        private CustomControls.RJControls.RJTextBox tb_telefono;
+        private CustomControls.RJControls.RJTextBox tb_email;
+        private CustomControls.RJControls.RJTextBox tb_nacimiento;
+        private CustomControls.RJControls.RJTextBox tb_nombres;
+        private CustomControls.RJControls.RJTextBox rjTextBox6;
     }
 }

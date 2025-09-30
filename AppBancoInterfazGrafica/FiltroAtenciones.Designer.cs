@@ -43,9 +43,8 @@
             panel1.Controls.Add(iconButton1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(960, 93);
+            panel1.Size = new Size(840, 70);
             panel1.TabIndex = 0;
             // 
             // bt_buscar_atencion
@@ -58,10 +57,9 @@
             bt_buscar_atencion.IconChar = FontAwesome.Sharp.IconChar.None;
             bt_buscar_atencion.IconColor = Color.Black;
             bt_buscar_atencion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            bt_buscar_atencion.Location = new Point(467, 0);
-            bt_buscar_atencion.Margin = new Padding(3, 4, 3, 4);
+            bt_buscar_atencion.Location = new Point(409, 0);
             bt_buscar_atencion.Name = "bt_buscar_atencion";
-            bt_buscar_atencion.Size = new Size(225, 89);
+            bt_buscar_atencion.Size = new Size(197, 67);
             bt_buscar_atencion.TabIndex = 2;
             bt_buscar_atencion.Text = "Buscar Atención";
             bt_buscar_atencion.UseVisualStyleBackColor = false;
@@ -77,10 +75,9 @@
             bt_pend_atencion.IconChar = FontAwesome.Sharp.IconChar.None;
             bt_pend_atencion.IconColor = Color.Black;
             bt_pend_atencion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            bt_pend_atencion.Location = new Point(236, 0);
-            bt_pend_atencion.Margin = new Padding(3, 4, 3, 4);
+            bt_pend_atencion.Location = new Point(206, 0);
             bt_pend_atencion.Name = "bt_pend_atencion";
-            bt_pend_atencion.Size = new Size(234, 89);
+            bt_pend_atencion.Size = new Size(205, 67);
             bt_pend_atencion.TabIndex = 1;
             bt_pend_atencion.Text = "Pendientes de Atención";
             bt_pend_atencion.UseVisualStyleBackColor = false;
@@ -97,9 +94,8 @@
             iconButton1.IconColor = Color.Black;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton1.Location = new Point(0, 0);
-            iconButton1.Margin = new Padding(3, 4, 3, 4);
             iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(241, 89);
+            iconButton1.Size = new Size(211, 67);
             iconButton1.TabIndex = 0;
             iconButton1.Text = "Atendidos";
             iconButton1.UseVisualStyleBackColor = false;
@@ -108,20 +104,20 @@
             // PanelContenedor
             // 
             PanelContenedor.Dock = DockStyle.Fill;
-            PanelContenedor.Location = new Point(0, 93);
+            PanelContenedor.Location = new Point(0, 70);
+            PanelContenedor.Margin = new Padding(3, 2, 3, 2);
             PanelContenedor.Name = "PanelContenedor";
-            PanelContenedor.Size = new Size(960, 610);
+            PanelContenedor.Size = new Size(840, 457);
             PanelContenedor.TabIndex = 1;
             // 
             // FiltroAtenciones
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(PanelContenedor);
             Controls.Add(panel1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FiltroAtenciones";
-            Size = new Size(960, 703);
+            Size = new Size(840, 527);
             panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
