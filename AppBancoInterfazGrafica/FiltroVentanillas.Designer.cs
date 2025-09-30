@@ -210,7 +210,7 @@
             rjTextBox4.BorderSize = 2;
             rjTextBox4.Font = new Font("Century Gothic", 9.75F);
             rjTextBox4.ForeColor = Color.DarkGray;
-            rjTextBox4.Location = new Point(274, 87);
+            rjTextBox4.Location = new Point(284, 87);
             rjTextBox4.Multiline = false;
             rjTextBox4.Name = "rjTextBox4";
             rjTextBox4.Padding = new Padding(10, 7, 10, 7);
@@ -232,7 +232,7 @@
             rjTextBox5.BorderSize = 2;
             rjTextBox5.Font = new Font("Century Gothic", 9.75F);
             rjTextBox5.ForeColor = Color.DarkGray;
-            rjTextBox5.Location = new Point(274, 125);
+            rjTextBox5.Location = new Point(284, 125);
             rjTextBox5.Multiline = false;
             rjTextBox5.Name = "rjTextBox5";
             rjTextBox5.Padding = new Padding(10, 7, 10, 7);
@@ -254,7 +254,7 @@
             rjTextBox6.BorderSize = 2;
             rjTextBox6.Font = new Font("Century Gothic", 9.75F);
             rjTextBox6.ForeColor = Color.DarkGray;
-            rjTextBox6.Location = new Point(274, 163);
+            rjTextBox6.Location = new Point(284, 163);
             rjTextBox6.Multiline = false;
             rjTextBox6.Name = "rjTextBox6";
             rjTextBox6.Padding = new Padding(10, 7, 10, 7);
@@ -284,7 +284,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 68);
             panel2.Name = "panel2";
-            panel2.Size = new Size(840, 238);
+            panel2.Size = new Size(840, 231);
             panel2.TabIndex = 14;
             // 
             // FiltroVentanillas
