@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             bt_cajero_editar = new CustomControls.RJControls.RJButton();
             bt_cajero_eliminar = new CustomControls.RJControls.RJButton();
             bt_cajero_agregar = new CustomControls.RJControls.RJButton();
@@ -42,7 +44,13 @@
             tb_direccion_cajeros = new CustomControls.RJControls.RJTextBox();
             tb_nombres_cajeros = new CustomControls.RJControls.RJTextBox();
             tb_dni_cajeros = new CustomControls.RJControls.RJTextBox();
+            dataGridView1 = new DataGridView();
+            Columna_DNI = new DataGridViewTextBoxColumn();
+            Columna_nombres = new DataGridViewTextBoxColumn();
+            Columna_telefono = new DataGridViewTextBoxColumn();
+            Columna_ventanilla = new DataGridViewTextBoxColumn();
             formulario_clientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // bt_cajero_editar
@@ -297,15 +305,70 @@
             tb_dni_cajeros.Texts = "";
             tb_dni_cajeros.UnderlinedStyle = false;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(175, 77, 255);
+            dataGridViewCellStyle1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(175, 77, 255);
+            dataGridViewCellStyle1.SelectionForeColor = Color.White;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Columna_DNI, Columna_nombres, Columna_telefono, Columna_ventanilla });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(253, 202, 251);
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(129, 110, 255);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.Location = new Point(0, 215);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.Size = new Size(840, 312);
+            dataGridView1.TabIndex = 5;
+            // 
+            // Columna_DNI
+            // 
+            Columna_DNI.HeaderText = "DNI";
+            Columna_DNI.Name = "Columna_DNI";
+            Columna_DNI.ReadOnly = true;
+            // 
+            // Columna_nombres
+            // 
+            Columna_nombres.HeaderText = "Nombre";
+            Columna_nombres.Name = "Columna_nombres";
+            Columna_nombres.ReadOnly = true;
+            // 
+            // Columna_telefono
+            // 
+            Columna_telefono.HeaderText = "Teléfono";
+            Columna_telefono.Name = "Columna_telefono";
+            Columna_telefono.ReadOnly = true;
+            // 
+            // Columna_ventanilla
+            // 
+            Columna_ventanilla.HeaderText = "Ventanilla Asignada";
+            Columna_ventanilla.Name = "Columna_ventanilla";
+            Columna_ventanilla.ReadOnly = true;
+            // 
             // FiltroCajeros
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dataGridView1);
             Controls.Add(formulario_clientes);
             Name = "FiltroCajeros";
             Size = new Size(840, 527);
             formulario_clientes.ResumeLayout(false);
             formulario_clientes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -325,5 +388,10 @@
         private CustomControls.RJControls.RJTextBox tb_email_cajeros;
         private CustomControls.RJControls.RJTextBox tb_direccion_cajeros;
         private CustomControls.RJControls.RJTextBox tb_nombres_cajeros;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Columna_DNI;
+        private DataGridViewTextBoxColumn Columna_nombres;
+        private DataGridViewTextBoxColumn Columna_telefono;
+        private DataGridViewTextBoxColumn Columna_ventanilla;
     }
 }

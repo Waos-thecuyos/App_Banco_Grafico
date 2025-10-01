@@ -1,6 +1,6 @@
 ﻿namespace AppBancoInterfazGrafica
 {
-    partial class FiltroServicios
+    partial class reporte_AtencionesCajero
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -30,62 +30,14 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            panel1 = new Panel();
-            ComboBox_servicios = new CustomControls.RJControls.RJComboBox();
-            label1 = new Label();
             dataGridView1 = new DataGridView();
-            Columna_ID = new DataGridViewTextBoxColumn();
-            Columna_descripcion = new DataGridViewTextBoxColumn();
-            Columna_ticket = new DataGridViewTextBoxColumn();
+            Columna_atencion = new DataGridViewTextBoxColumn();
+            Columna_nombre = new DataGridViewTextBoxColumn();
+            Columna_DNI = new DataGridViewTextBoxColumn();
             Columna_tiempo = new DataGridViewTextBoxColumn();
             Columna_fecha = new DataGridViewTextBoxColumn();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(38, 39, 59);
-            panel1.Controls.Add(ComboBox_servicios);
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(840, 86);
-            panel1.TabIndex = 0;
-            // 
-            // ComboBox_servicios
-            // 
-            ComboBox_servicios.AutoCompleteMode = AutoCompleteMode.Suggest;
-            ComboBox_servicios.AutoCompleteSource = AutoCompleteSource.ListItems;
-            ComboBox_servicios.BackColor = Color.FromArgb(38, 39, 59);
-            ComboBox_servicios.BorderColor = Color.MediumSlateBlue;
-            ComboBox_servicios.BorderSize = 2;
-            ComboBox_servicios.DropDownStyle = ComboBoxStyle.DropDown;
-            ComboBox_servicios.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ComboBox_servicios.ForeColor = Color.Silver;
-            ComboBox_servicios.IconColor = Color.MediumSlateBlue;
-            ComboBox_servicios.Items.AddRange(new object[] { "Depósito", "Retiro", "Transferencia", "Pago de servicios", "Cambio de moneda" });
-            ComboBox_servicios.ListBackColor = Color.FromArgb(38, 39, 59);
-            ComboBox_servicios.ListTextColor = Color.WhiteSmoke;
-            ComboBox_servicios.Location = new Point(212, 11);
-            ComboBox_servicios.MinimumSize = new Size(200, 30);
-            ComboBox_servicios.Name = "ComboBox_servicios";
-            ComboBox_servicios.Padding = new Padding(2);
-            ComboBox_servicios.Size = new Size(288, 30);
-            ComboBox_servicios.TabIndex = 1;
-            ComboBox_servicios.Texts = "Seleccione";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.LightGray;
-            label1.Location = new Point(53, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(128, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Tipo de servicio";
             // 
             // dataGridView1
             // 
@@ -99,7 +51,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Columna_ID, Columna_descripcion, Columna_ticket, Columna_tiempo, Columna_fecha });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Columna_atencion, Columna_nombre, Columna_DNI, Columna_tiempo, Columna_fecha });
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.White;
             dataGridViewCellStyle2.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -110,29 +62,29 @@
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.Location = new Point(0, 86);
+            dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(840, 441);
-            dataGridView1.TabIndex = 6;
+            dataGridView1.Size = new Size(651, 465);
+            dataGridView1.TabIndex = 8;
             // 
-            // Columna_ID
+            // Columna_atencion
             // 
-            Columna_ID.HeaderText = "ID del Servicio";
-            Columna_ID.Name = "Columna_ID";
-            Columna_ID.ReadOnly = true;
+            Columna_atencion.HeaderText = "Atención";
+            Columna_atencion.Name = "Columna_atencion";
+            Columna_atencion.ReadOnly = true;
             // 
-            // Columna_descripcion
+            // Columna_nombre
             // 
-            Columna_descripcion.HeaderText = "Descripción";
-            Columna_descripcion.Name = "Columna_descripcion";
-            Columna_descripcion.ReadOnly = true;
+            Columna_nombre.HeaderText = "Nombre del Cajero";
+            Columna_nombre.Name = "Columna_nombre";
+            Columna_nombre.ReadOnly = true;
             // 
-            // Columna_ticket
+            // Columna_DNI
             // 
-            Columna_ticket.HeaderText = "Número de Ticket";
-            Columna_ticket.Name = "Columna_ticket";
-            Columna_ticket.ReadOnly = true;
+            Columna_DNI.HeaderText = "DNI del Cajero";
+            Columna_DNI.Name = "Columna_DNI";
+            Columna_DNI.ReadOnly = true;
             // 
             // Columna_tiempo
             // 
@@ -146,30 +98,23 @@
             Columna_fecha.Name = "Columna_fecha";
             Columna_fecha.ReadOnly = true;
             // 
-            // FiltroServicios
+            // reporte_AtencionesCajero
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlLightLight;
             Controls.Add(dataGridView1);
-            Controls.Add(panel1);
-            Name = "FiltroServicios";
-            Size = new Size(840, 527);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            Name = "reporte_AtencionesCajero";
+            Size = new Size(651, 465);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
-        private Label label1;
-        private CustomControls.RJControls.RJComboBox ComboBox_servicios;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Columna_ID;
-        private DataGridViewTextBoxColumn Columna_descripcion;
-        private DataGridViewTextBoxColumn Columna_ticket;
+        private DataGridViewTextBoxColumn Columna_atencion;
+        private DataGridViewTextBoxColumn Columna_nombre;
+        private DataGridViewTextBoxColumn Columna_DNI;
         private DataGridViewTextBoxColumn Columna_tiempo;
         private DataGridViewTextBoxColumn Columna_fecha;
     }

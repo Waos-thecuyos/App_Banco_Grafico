@@ -30,10 +30,12 @@
         {
             label1 = new Label();
             panel1 = new Panel();
+            bt_ver_reporte = new CustomControls.RJControls.RJButton();
             ComboBox_reportes = new CustomControls.RJControls.RJComboBox();
             panel2 = new Panel();
             bt_exportar = new FontAwesome.Sharp.IconButton();
             bt_importar = new FontAwesome.Sharp.IconButton();
+            panel3 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -52,6 +54,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(38, 39, 59);
+            panel1.Controls.Add(bt_ver_reporte);
             panel1.Controls.Add(ComboBox_reportes);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
@@ -59,6 +62,27 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(840, 62);
             panel1.TabIndex = 1;
+            // 
+            // bt_ver_reporte
+            // 
+            bt_ver_reporte.BackColor = Color.MediumSlateBlue;
+            bt_ver_reporte.BackgroundColor = Color.MediumSlateBlue;
+            bt_ver_reporte.BorderColor = Color.PaleVioletRed;
+            bt_ver_reporte.BorderRadius = 15;
+            bt_ver_reporte.BorderSize = 0;
+            bt_ver_reporte.Cursor = Cursors.Hand;
+            bt_ver_reporte.FlatAppearance.BorderSize = 0;
+            bt_ver_reporte.FlatStyle = FlatStyle.Flat;
+            bt_ver_reporte.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            bt_ver_reporte.ForeColor = Color.LightGray;
+            bt_ver_reporte.Location = new Point(573, 11);
+            bt_ver_reporte.Name = "bt_ver_reporte";
+            bt_ver_reporte.Size = new Size(161, 30);
+            bt_ver_reporte.TabIndex = 2;
+            bt_ver_reporte.Text = "Ver reporte";
+            bt_ver_reporte.TextColor = Color.LightGray;
+            bt_ver_reporte.UseVisualStyleBackColor = false;
+            bt_ver_reporte.Click += bt_ver_reporte_Click;
             // 
             // ComboBox_reportes
             // 
@@ -69,7 +93,7 @@
             ComboBox_reportes.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ComboBox_reportes.ForeColor = Color.Silver;
             ComboBox_reportes.IconColor = Color.MediumSlateBlue;
-            ComboBox_reportes.Items.AddRange(new object[] { "Clientes", "Cajeros", "Servicios", "Ventanillas", "Atenciones" });
+            ComboBox_reportes.Items.AddRange(new object[] { "Atenciones realizadas por servicio", "Atenciones realizadas por cajero", "Totales recaudados (Retiros / Depósitos)" });
             ComboBox_reportes.ListBackColor = Color.FromArgb(38, 39, 59);
             ComboBox_reportes.ListTextColor = Color.WhiteSmoke;
             ComboBox_reportes.Location = new Point(212, 11);
@@ -77,7 +101,7 @@
             ComboBox_reportes.MinimumSize = new Size(200, 30);
             ComboBox_reportes.Name = "ComboBox_reportes";
             ComboBox_reportes.Padding = new Padding(2);
-            ComboBox_reportes.Size = new Size(288, 30);
+            ComboBox_reportes.Size = new Size(356, 30);
             ComboBox_reportes.TabIndex = 1;
             ComboBox_reportes.Texts = "Seleccione";
             // 
@@ -134,11 +158,20 @@
             bt_importar.TextImageRelation = TextImageRelation.ImageBeforeText;
             bt_importar.UseVisualStyleBackColor = false;
             // 
+            // panel3
+            // 
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(0, 62);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(651, 465);
+            panel3.TabIndex = 3;
+            // 
             // FiltroReportes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
+            Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "FiltroReportes";
@@ -157,5 +190,7 @@
         private Panel panel2;
         private FontAwesome.Sharp.IconButton bt_exportar;
         private FontAwesome.Sharp.IconButton bt_importar;
+        private Panel panel3;
+        private CustomControls.RJControls.RJButton bt_ver_reporte;
     }
 }

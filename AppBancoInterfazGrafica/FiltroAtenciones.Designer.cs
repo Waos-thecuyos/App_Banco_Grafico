@@ -112,6 +112,7 @@
             // 
             // PanelContenedor
             // 
+            PanelContenedor.Cursor = Cursors.Default;
             PanelContenedor.Dock = DockStyle.Fill;
             PanelContenedor.Location = new Point(0, 72);
             PanelContenedor.Margin = new Padding(3, 2, 3, 2);

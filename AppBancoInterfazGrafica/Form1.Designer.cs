@@ -45,7 +45,7 @@
             // 
             // PanelContenedor
             // 
-            PanelContenedor.Dock = DockStyle.Right;
+            PanelContenedor.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             PanelContenedor.Location = new Point(244, 0);
             PanelContenedor.Name = "PanelContenedor";
             PanelContenedor.Size = new Size(840, 527);
@@ -211,7 +211,7 @@
             // 
             // panel3
             // 
-            panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panel3.BackColor = Color.FromArgb(38, 39, 59);
             panel3.Controls.Add(bt_reportes);
             panel3.Controls.Add(bt_clientes);

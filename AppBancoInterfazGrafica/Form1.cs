@@ -1,18 +1,38 @@
+using AppVentanillasBanco;
 using FontAwesome.Sharp;
 
 namespace AppBancoInterfazGrafica
 {
     public partial class Form1 : Form
     {
+        private CLista clientes = new CLista();
+        private CLista cajeros = new CLista();
+        private CLista servicios = new CLista();
+        private CLista atenciones = new CLista();
+        private cColaPrioridad cola = new cColaPrioridad();
+        private int ultimoTicket = 0;
+
+
+
+
+        // Atributos de personalización
         private IconButton botonSeleccionado;
         private Panel BordeIzquierdo;
         public Form1()
         {
             InitializeComponent();
+
+
+
+            this.MinimumSize = new Size(1100, 566);
+            
+
             BordeIzquierdo = new Panel();
             BordeIzquierdo.Size = new Size(2, 50);
             panel3.Controls.Add(BordeIzquierdo);
             ActivarBoton(bt_clientes);
+            FiltroClientes fp = new FiltroClientes(clientes, atenciones, cola, ref ultimoTicket);
+            AplicarFiltros(fp);
 
         }
 
@@ -56,7 +76,7 @@ namespace AppBancoInterfazGrafica
         private void bt_clientes_Click(object sender, EventArgs e)
         {
             ActivarBoton(sender);
-            FiltroClientes fp = new FiltroClientes();
+            FiltroClientes fp = new FiltroClientes(clientes, atenciones, cola, ref ultimoTicket);
             AplicarFiltros(fp);
         }
 

@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             formulario_clientes = new Panel();
+            ComboBox_servicios = new CustomControls.RJControls.RJComboBox();
+            label9 = new Label();
             tb_monto = new CustomControls.RJControls.RJTextBox();
             bt_cliente_agregar = new CustomControls.RJControls.RJButton();
-            bt_cliente_eliminar = new CustomControls.RJControls.RJButton();
             tb_telefono = new CustomControls.RJControls.RJTextBox();
-            bt_cliente_editar = new CustomControls.RJControls.RJButton();
             tb_email = new CustomControls.RJControls.RJTextBox();
             tb_nacimiento = new CustomControls.RJControls.RJTextBox();
             tb_nombres = new CustomControls.RJControls.RJTextBox();
@@ -46,17 +48,24 @@
             label7 = new Label();
             label6 = new Label();
             label1 = new Label();
+            tabla_clientes = new DataGridView();
+            Columna_dni = new DataGridViewTextBoxColumn();
+            Columna_nombres = new DataGridViewTextBoxColumn();
+            Columna_telefono = new DataGridViewTextBoxColumn();
+            Columna_prioridad = new DataGridViewTextBoxColumn();
+            Columna_ticket = new DataGridViewTextBoxColumn();
             formulario_clientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)tabla_clientes).BeginInit();
             SuspendLayout();
             // 
             // formulario_clientes
             // 
             formulario_clientes.BackColor = Color.FromArgb(75, 57, 94);
+            formulario_clientes.Controls.Add(ComboBox_servicios);
+            formulario_clientes.Controls.Add(label9);
             formulario_clientes.Controls.Add(tb_monto);
             formulario_clientes.Controls.Add(bt_cliente_agregar);
-            formulario_clientes.Controls.Add(bt_cliente_eliminar);
             formulario_clientes.Controls.Add(tb_telefono);
-            formulario_clientes.Controls.Add(bt_cliente_editar);
             formulario_clientes.Controls.Add(tb_email);
             formulario_clientes.Controls.Add(tb_nacimiento);
             formulario_clientes.Controls.Add(tb_nombres);
@@ -72,8 +81,41 @@
             formulario_clientes.Dock = DockStyle.Top;
             formulario_clientes.Location = new Point(0, 0);
             formulario_clientes.Name = "formulario_clientes";
-            formulario_clientes.Size = new Size(840, 277);
+            formulario_clientes.Size = new Size(840, 334);
             formulario_clientes.TabIndex = 0;
+            // 
+            // ComboBox_servicios
+            // 
+            ComboBox_servicios.AutoCompleteMode = AutoCompleteMode.Suggest;
+            ComboBox_servicios.AutoCompleteSource = AutoCompleteSource.ListItems;
+            ComboBox_servicios.BackColor = Color.FromArgb(38, 39, 59);
+            ComboBox_servicios.BorderColor = Color.MediumSlateBlue;
+            ComboBox_servicios.BorderSize = 2;
+            ComboBox_servicios.DropDownStyle = ComboBoxStyle.DropDown;
+            ComboBox_servicios.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ComboBox_servicios.ForeColor = Color.Silver;
+            ComboBox_servicios.IconColor = Color.MediumSlateBlue;
+            ComboBox_servicios.Items.AddRange(new object[] { "Depósito", "Retiro", "Transferencia", "Pago de servicios", "Cambio de moneda" });
+            ComboBox_servicios.ListBackColor = Color.FromArgb(38, 39, 59);
+            ComboBox_servicios.ListTextColor = Color.WhiteSmoke;
+            ComboBox_servicios.Location = new Point(238, 238);
+            ComboBox_servicios.MinimumSize = new Size(200, 30);
+            ComboBox_servicios.Name = "ComboBox_servicios";
+            ComboBox_servicios.Padding = new Padding(2);
+            ComboBox_servicios.Size = new Size(309, 30);
+            ComboBox_servicios.TabIndex = 30;
+            ComboBox_servicios.Texts = "Seleccione";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.LightGray;
+            label9.Location = new Point(30, 247);
+            label9.Name = "label9";
+            label9.Size = new Size(151, 21);
+            label9.TabIndex = 29;
+            label9.Text = "Servicio solicitado:";
             // 
             // tb_monto
             // 
@@ -109,33 +151,14 @@
             bt_cliente_agregar.FlatStyle = FlatStyle.Flat;
             bt_cliente_agregar.Font = new Font("Century Gothic", 12F);
             bt_cliente_agregar.ForeColor = Color.LightGray;
-            bt_cliente_agregar.Location = new Point(644, 6);
+            bt_cliente_agregar.Location = new Point(601, 16);
             bt_cliente_agregar.Name = "bt_cliente_agregar";
-            bt_cliente_agregar.Size = new Size(150, 40);
+            bt_cliente_agregar.Size = new Size(199, 40);
             bt_cliente_agregar.TabIndex = 1;
-            bt_cliente_agregar.Text = "Agregar";
+            bt_cliente_agregar.Text = "Agregar a la cola";
             bt_cliente_agregar.TextColor = Color.LightGray;
             bt_cliente_agregar.UseVisualStyleBackColor = false;
-            // 
-            // bt_cliente_eliminar
-            // 
-            bt_cliente_eliminar.BackColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_eliminar.BackgroundColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_eliminar.BorderColor = Color.PaleVioletRed;
-            bt_cliente_eliminar.BorderRadius = 10;
-            bt_cliente_eliminar.BorderSize = 0;
-            bt_cliente_eliminar.Cursor = Cursors.Hand;
-            bt_cliente_eliminar.FlatAppearance.BorderSize = 0;
-            bt_cliente_eliminar.FlatStyle = FlatStyle.Flat;
-            bt_cliente_eliminar.Font = new Font("Century Gothic", 12F);
-            bt_cliente_eliminar.ForeColor = Color.LightGray;
-            bt_cliente_eliminar.Location = new Point(644, 50);
-            bt_cliente_eliminar.Name = "bt_cliente_eliminar";
-            bt_cliente_eliminar.Size = new Size(150, 40);
-            bt_cliente_eliminar.TabIndex = 2;
-            bt_cliente_eliminar.Text = "Eliminar";
-            bt_cliente_eliminar.TextColor = Color.LightGray;
-            bt_cliente_eliminar.UseVisualStyleBackColor = false;
+            bt_cliente_agregar.Click += bt_cliente_agregar_Click;
             // 
             // tb_telefono
             // 
@@ -158,26 +181,6 @@
             tb_telefono.TabIndex = 27;
             tb_telefono.Texts = "";
             tb_telefono.UnderlinedStyle = false;
-            // 
-            // bt_cliente_editar
-            // 
-            bt_cliente_editar.BackColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_editar.BackgroundColor = Color.FromArgb(38, 39, 59);
-            bt_cliente_editar.BorderColor = Color.PaleVioletRed;
-            bt_cliente_editar.BorderRadius = 10;
-            bt_cliente_editar.BorderSize = 0;
-            bt_cliente_editar.Cursor = Cursors.Hand;
-            bt_cliente_editar.FlatAppearance.BorderSize = 0;
-            bt_cliente_editar.FlatStyle = FlatStyle.Flat;
-            bt_cliente_editar.Font = new Font("Century Gothic", 12F);
-            bt_cliente_editar.ForeColor = Color.LightGray;
-            bt_cliente_editar.Location = new Point(644, 93);
-            bt_cliente_editar.Name = "bt_cliente_editar";
-            bt_cliente_editar.Size = new Size(150, 40);
-            bt_cliente_editar.TabIndex = 3;
-            bt_cliente_editar.Text = "Editar";
-            bt_cliente_editar.TextColor = Color.LightGray;
-            bt_cliente_editar.UseVisualStyleBackColor = false;
             // 
             // tb_email
             // 
@@ -272,7 +275,7 @@
             CheckBox_discapacidad.AutoSize = true;
             CheckBox_discapacidad.Font = new Font("Century Gothic", 12F);
             CheckBox_discapacidad.ForeColor = Color.LightGray;
-            CheckBox_discapacidad.Location = new Point(408, 249);
+            CheckBox_discapacidad.Location = new Point(408, 282);
             CheckBox_discapacidad.Name = "CheckBox_discapacidad";
             CheckBox_discapacidad.Size = new Size(139, 25);
             CheckBox_discapacidad.TabIndex = 22;
@@ -284,7 +287,7 @@
             CheckBox_ninhos.AutoSize = true;
             CheckBox_ninhos.Font = new Font("Century Gothic", 12F);
             CheckBox_ninhos.ForeColor = Color.LightGray;
-            CheckBox_ninhos.Location = new Point(258, 249);
+            CheckBox_ninhos.Location = new Point(258, 282);
             CheckBox_ninhos.Name = "CheckBox_ninhos";
             CheckBox_ninhos.Size = new Size(70, 25);
             CheckBox_ninhos.TabIndex = 15;
@@ -363,16 +366,77 @@
             label1.TabIndex = 0;
             label1.Text = "DNI:";
             // 
+            // tabla_clientes
+            // 
+            tabla_clientes.BackgroundColor = Color.White;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(175, 77, 255);
+            dataGridViewCellStyle3.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(175, 77, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.White;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            tabla_clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            tabla_clientes.Columns.AddRange(new DataGridViewColumn[] { Columna_dni, Columna_nombres, Columna_telefono, Columna_prioridad, Columna_ticket });
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(253, 202, 251);
+            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(129, 110, 255);
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            tabla_clientes.DefaultCellStyle = dataGridViewCellStyle4;
+            tabla_clientes.Dock = DockStyle.Fill;
+            tabla_clientes.EnableHeadersVisualStyles = false;
+            tabla_clientes.Location = new Point(0, 334);
+            tabla_clientes.Name = "tabla_clientes";
+            tabla_clientes.Size = new Size(840, 193);
+            tabla_clientes.TabIndex = 0;
+            // 
+            // Columna_dni
+            // 
+            Columna_dni.HeaderText = "DNI";
+            Columna_dni.Name = "Columna_dni";
+            Columna_dni.ReadOnly = true;
+            // 
+            // Columna_nombres
+            // 
+            Columna_nombres.HeaderText = "Nombre";
+            Columna_nombres.Name = "Columna_nombres";
+            Columna_nombres.ReadOnly = true;
+            // 
+            // Columna_telefono
+            // 
+            Columna_telefono.HeaderText = "Teléfono";
+            Columna_telefono.Name = "Columna_telefono";
+            Columna_telefono.ReadOnly = true;
+            // 
+            // Columna_prioridad
+            // 
+            Columna_prioridad.HeaderText = "Nivel de Prioridad";
+            Columna_prioridad.Name = "Columna_prioridad";
+            Columna_prioridad.ReadOnly = true;
+            Columna_prioridad.Width = 150;
+            // 
+            // Columna_ticket
+            // 
+            Columna_ticket.HeaderText = "Número de Ticket";
+            Columna_ticket.Name = "Columna_ticket";
+            Columna_ticket.ReadOnly = true;
+            Columna_ticket.Width = 150;
+            // 
             // FiltroClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(tabla_clientes);
             Controls.Add(formulario_clientes);
             Name = "FiltroClientes";
             Size = new Size(840, 527);
             formulario_clientes.ResumeLayout(false);
             formulario_clientes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)tabla_clientes).EndInit();
             ResumeLayout(false);
         }
 
@@ -380,8 +444,6 @@
 
         private Panel formulario_clientes;
         private CustomControls.RJControls.RJButton bt_cliente_agregar;
-        private CustomControls.RJControls.RJButton bt_cliente_eliminar;
-        private CustomControls.RJControls.RJButton bt_cliente_editar;
         private Label label2;
         private Label label1;
         private Label label8;
@@ -400,5 +462,13 @@
         private CustomControls.RJControls.RJTextBox tb_nacimiento;
         private CustomControls.RJControls.RJTextBox tb_nombres;
         private CustomControls.RJControls.RJTextBox rjTextBox6;
+        private DataGridView tabla_clientes;
+        private DataGridViewTextBoxColumn Columna_dni;
+        private DataGridViewTextBoxColumn Columna_nombres;
+        private DataGridViewTextBoxColumn Columna_telefono;
+        private DataGridViewTextBoxColumn Columna_prioridad;
+        private DataGridViewTextBoxColumn Columna_ticket;
+        private Label label9;
+        private CustomControls.RJControls.RJComboBox ComboBox_servicios;
     }
 }

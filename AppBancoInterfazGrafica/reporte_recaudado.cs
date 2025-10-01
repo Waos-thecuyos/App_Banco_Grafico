@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace AppBancoInterfazGrafica
 {
-    public partial class filtro_atenciones_NoAtendidos : UserControl
+    public partial class reporte_recaudado : UserControl
     {
-        public filtro_atenciones_NoAtendidos()
+        public reporte_recaudado()
         {
             InitializeComponent();
+
 
             // =============== DataGridView Personalizado ===================
             dataGridView1.MinimumSize = new Size(400, 0);

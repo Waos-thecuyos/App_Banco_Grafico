@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppBancoInterfazGrafica
 {
-    public partial class filtro_atenciones_NoAtendidos : UserControl
+    public partial class reporte_AtencionesCajero : UserControl
     {
-        public filtro_atenciones_NoAtendidos()
+        public reporte_AtencionesCajero()
         {
             InitializeComponent();
 

@@ -22,6 +22,8 @@ namespace AppBancoInterfazGrafica
             BordeInferior.Size = new Size(280, 4);
             panel1.Controls.Add(BordeInferior);
             ActivarBoton(bt_atendidos);
+            filtro_atenciones_atendidos fp = new filtro_atenciones_atendidos();
+            AplicarFiltros(fp);
         }
 
         // **** Control de Pestañas ****

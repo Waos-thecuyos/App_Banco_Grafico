@@ -53,7 +53,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 11.25F);
             label1.ForeColor = Color.LightGray;
-            label1.Location = new Point(450, 26);
+            label1.Location = new Point(475, 59);
             label1.Name = "label1";
             label1.Size = new Size(135, 20);
             label1.TabIndex = 0;
@@ -64,7 +64,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 11.25F);
             label3.ForeColor = Color.LightGray;
-            label3.Location = new Point(42, 26);
+            label3.Location = new Point(67, 59);
             label3.Name = "label3";
             label3.Size = new Size(171, 20);
             label3.TabIndex = 2;
@@ -86,7 +86,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 11.25F);
             label4.ForeColor = Color.LightGray;
-            label4.Location = new Point(42, 67);
+            label4.Location = new Point(167, 176);
             label4.Name = "label4";
             label4.Size = new Size(159, 20);
             label4.TabIndex = 4;
@@ -97,7 +97,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 11.25F);
             label5.ForeColor = Color.LightGray;
-            label5.Location = new Point(142, 137);
+            label5.Location = new Point(251, 259);
             label5.Name = "label5";
             label5.Size = new Size(78, 20);
             label5.TabIndex = 5;
@@ -108,7 +108,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 11.25F);
             label6.ForeColor = Color.LightGray;
-            label6.Location = new Point(142, 99);
+            label6.Location = new Point(251, 221);
             label6.Name = "label6";
             label6.Size = new Size(126, 20);
             label6.TabIndex = 6;
@@ -119,7 +119,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 11.25F);
             label7.ForeColor = Color.LightGray;
-            label7.Location = new Point(142, 172);
+            label7.Location = new Point(251, 294);
             label7.Name = "label7";
             label7.Size = new Size(133, 20);
             label7.TabIndex = 7;
@@ -189,7 +189,7 @@
             tb_num_ventanilla.BorderSize = 2;
             tb_num_ventanilla.Font = new Font("Century Gothic", 9.75F);
             tb_num_ventanilla.ForeColor = Color.DarkGray;
-            tb_num_ventanilla.Location = new Point(219, 14);
+            tb_num_ventanilla.Location = new Point(244, 47);
             tb_num_ventanilla.Multiline = false;
             tb_num_ventanilla.Name = "tb_num_ventanilla";
             tb_num_ventanilla.Padding = new Padding(10, 7, 10, 7);
@@ -211,7 +211,7 @@
             tb_cajero.BorderSize = 2;
             tb_cajero.Font = new Font("Century Gothic", 9.75F);
             tb_cajero.ForeColor = Color.DarkGray;
-            tb_cajero.Location = new Point(591, 14);
+            tb_cajero.Location = new Point(616, 47);
             tb_cajero.Multiline = false;
             tb_cajero.Name = "tb_cajero";
             tb_cajero.Padding = new Padding(10, 7, 10, 7);
@@ -233,7 +233,7 @@
             tb_tipo_servicio.BorderSize = 2;
             tb_tipo_servicio.Font = new Font("Century Gothic", 9.75F);
             tb_tipo_servicio.ForeColor = Color.DarkGray;
-            tb_tipo_servicio.Location = new Point(284, 87);
+            tb_tipo_servicio.Location = new Point(393, 209);
             tb_tipo_servicio.Multiline = false;
             tb_tipo_servicio.Name = "tb_tipo_servicio";
             tb_tipo_servicio.Padding = new Padding(10, 7, 10, 7);
@@ -255,7 +255,7 @@
             tb_prioridad.BorderSize = 2;
             tb_prioridad.Font = new Font("Century Gothic", 9.75F);
             tb_prioridad.ForeColor = Color.DarkGray;
-            tb_prioridad.Location = new Point(284, 125);
+            tb_prioridad.Location = new Point(393, 247);
             tb_prioridad.Multiline = false;
             tb_prioridad.Name = "tb_prioridad";
             tb_prioridad.Padding = new Padding(10, 7, 10, 7);
@@ -277,7 +277,7 @@
             tb_recibio_atencion.BorderSize = 2;
             tb_recibio_atencion.Font = new Font("Century Gothic", 9.75F);
             tb_recibio_atencion.ForeColor = Color.DarkGray;
-            tb_recibio_atencion.Location = new Point(284, 163);
+            tb_recibio_atencion.Location = new Point(393, 285);
             tb_recibio_atencion.Multiline = false;
             tb_recibio_atencion.Name = "tb_recibio_atencion";
             tb_recibio_atencion.Padding = new Padding(10, 7, 10, 7);
@@ -304,10 +304,10 @@
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label7);
             panel2.Controls.Add(label1);
-            panel2.Dock = DockStyle.Top;
+            panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 68);
             panel2.Name = "panel2";
-            panel2.Size = new Size(840, 231);
+            panel2.Size = new Size(840, 459);
             panel2.TabIndex = 14;
             // 
             // FiltroVentanillas

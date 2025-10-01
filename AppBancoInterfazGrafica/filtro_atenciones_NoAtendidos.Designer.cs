@@ -28,11 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             panel1 = new Panel();
             rjButton1 = new CustomControls.RJControls.RJButton();
             ComboBox_ventanilla = new CustomControls.RJControls.RJComboBox();
             label1 = new Label();
+            dataGridView1 = new DataGridView();
+            Columna_nombres = new DataGridViewTextBoxColumn();
+            Columna_servicio = new DataGridViewTextBoxColumn();
+            Columna_prioridad = new DataGridViewTextBoxColumn();
+            Columna_atendido = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -99,16 +107,71 @@
             label1.TabIndex = 0;
             label1.Text = "Ventanilla:";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(175, 77, 255);
+            dataGridViewCellStyle1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(175, 77, 255);
+            dataGridViewCellStyle1.SelectionForeColor = Color.White;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Columna_nombres, Columna_servicio, Columna_prioridad, Columna_atendido });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(253, 202, 251);
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(129, 110, 255);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.Location = new Point(0, 62);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.Size = new Size(840, 393);
+            dataGridView1.TabIndex = 7;
+            // 
+            // Columna_nombres
+            // 
+            Columna_nombres.HeaderText = "Nombre";
+            Columna_nombres.Name = "Columna_nombres";
+            Columna_nombres.ReadOnly = true;
+            // 
+            // Columna_servicio
+            // 
+            Columna_servicio.HeaderText = "Tipo de Servicio";
+            Columna_servicio.Name = "Columna_servicio";
+            Columna_servicio.ReadOnly = true;
+            // 
+            // Columna_prioridad
+            // 
+            Columna_prioridad.HeaderText = "Prioridad";
+            Columna_prioridad.Name = "Columna_prioridad";
+            Columna_prioridad.ReadOnly = true;
+            // 
+            // Columna_atendido
+            // 
+            Columna_atendido.HeaderText = "Estado de atención";
+            Columna_atendido.Name = "Columna_atendido";
+            Columna_atendido.ReadOnly = true;
+            // 
             // filtro_atenciones_NoAtendidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dataGridView1);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "filtro_atenciones_NoAtendidos";
             Size = new Size(840, 455);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -118,5 +181,10 @@
         private Label label1;
         private CustomControls.RJControls.RJComboBox ComboBox_ventanilla;
         private CustomControls.RJControls.RJButton rjButton1;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Columna_nombres;
+        private DataGridViewTextBoxColumn Columna_servicio;
+        private DataGridViewTextBoxColumn Columna_prioridad;
+        private DataGridViewTextBoxColumn Columna_atendido;
     }
 }

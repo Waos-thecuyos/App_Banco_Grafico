@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace AppBancoInterfazGrafica
 {
-    public partial class filtro_atenciones_NoAtendidos : UserControl
+    public partial class reporte_AtencionesServicio : UserControl
     {
-        public filtro_atenciones_NoAtendidos()
+        public reporte_AtencionesServicio()
         {
             InitializeComponent();
-
             // =============== DataGridView Personalizado ===================
             dataGridView1.MinimumSize = new Size(400, 0);
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -37,6 +36,7 @@ namespace AppBancoInterfazGrafica
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false; // opcional, evita seleccionar varias filas a la vez
+
         }
     }
 }
